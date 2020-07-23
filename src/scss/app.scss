@@ -9,8 +9,13 @@
 
 //Components
 @import "custom/components/menu-mobile";
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/solid.scss";
+@import "./fontawesome/brands.scss";
+@import "custom/components/buttons";
 @import "custom/components/footer";
 @import "custom/components/header";
+@import "custom/components/newsletter";
 
 
 // Pages

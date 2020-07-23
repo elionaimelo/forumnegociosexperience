@@ -1,14 +1,54 @@
 #footer {
   height: 650px;
-  background: url(../images/bgFooter.jpg) top right no-repeat;
-  margin-top: 120px;
+  background:$preto url(../images/bgFooter.jpg) bottom right no-repeat;
   padding-top: 115px;
+
 
   h2 {
     color: $branco;
   }
 
+  .social {
+    margin-top: 70px;
+    a {
+
+      i {
+        font-size: 28px;
+      }
+
+      &:first-child {
+        color: #6800d5;
+      }
+      &:nth-child(2) {
+        color: #7c00d5;
+      }
+      &:nth-child(3) {
+        background: linear-gradient(90deg, #8a00d4 0%, #8f00d3 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &:last-child {
+        background: linear-gradient(90deg, #9d00d2 0%, #a400d1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &:not(:last-child) i {
+        margin-right: 60px;
+      }
+    }
+  }
+
   .institutional {
-    margin-top: 290px;
+    color: $cinza;
+    margin-top: 240px;
+    margin-bottom: 20px;
+
+    a {
+      color: $roxo;
+
+      &:hover {
+        color: $branco;
+      }
+    }
   }
 }

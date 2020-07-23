@@ -1,0 +1,20 @@
+#newsletter {
+  background: linear-gradient(90deg, #6300d6 0%, #a900d1 100%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+
+  h3 {
+    color: $branco;
+    margin-bottom: 0;
+  }
+
+  input {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 66px;
+  }
+}

@@ -3,6 +3,9 @@
   background: url(../images/bgSection1.jpg) center no-repeat;
   background-size: cover;
   height: 750px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 
   .nav {
     a {
@@ -330,6 +333,11 @@
 
   .partners {
     margin-top: 70px;
+
+    .row {
+      margin-bottom: 30px;
+    }
+
     figure {
       position: relative;
       z-index: 1;
