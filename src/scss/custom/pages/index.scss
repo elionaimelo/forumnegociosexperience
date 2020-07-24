@@ -36,8 +36,26 @@
 #section2 {
   background: url(../images/bgSection2.jpg) no-repeat;
   background-size: cover;
-  height: 720px;
+
   background-color: $preto;
+
+  .aux-row {
+    padding-top: 255px;
+    padding-bottom: 185px;
+  }
+
+  .text-white {
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 14px;
+    span {
+      color: #C1C1C1;
+    }
+  }
+
+  .btn {
+    margin-top: 60px;
+  }
 
   .tab-custom1 {
     height: 130px;
@@ -61,22 +79,10 @@
       box-shadow: 0px 10px 60px rgba(115, 0, 199, 0.5);
     }
   }
-
-  .btn-vaga {
-    color: white;
-    border-radius: 8px;
-    box-shadow: 0px 10px 60px rgba(115, 0, 199, 0.5);
-    &:hover {
-      color: white;
-      border-radius: 8px;
-      background: linear-gradient(60deg, #6300d6 0%, #a900d1 100%);
-    }
-  }
-
 }
 
 .bg {
-  background: linear-gradient(90deg, #a900d1 0%, #6300d6 100%);
+  background: $gradiente;
   z-index: 1;
   height: 470px;
   width: 78vw;
@@ -90,18 +96,17 @@
 }
 
 #section3 {
-  background-color: $preto;
+  background: url(../images/bg-palestrantes.png) no-repeat top left;
+  background-size: 80%;
+
+  .box-txt {
+    margin-bottom: 80px;
+    height: auto;
+  }
   h2 {
     font-size: $fonte-media;
     color: white;
   }
-}
-
-#section4 {
-  background-color: $preto;
-  z-index: 5;
-  position: relative;
-  margin-top: 280px;
 
   .embed-responsive {
     padding-top: 0;
@@ -113,12 +118,25 @@
 
 #section5 {
   background: #000 url(../images/bgSection5.png) center right no-repeat;
-  height: 700px;
-  margin-top: -80px;
+  padding-top: 250px;
+  padding-bottom: 220px;
+  // border-bottom: 1px solid #707070;
+
+  .text-white {
+    font-size: 22px;
+    line-height: 40px;
+    margin-top: 14px;
+    span {
+      color: #C1C1C1;
+    }
+  }
+
+  .btn {
+    margin-top: 26px;
+  }
 }
 
 #section6 {
-  background-color: $preto;
   display: flex;
   flex-wrap: wrap;
 
@@ -129,11 +147,62 @@
   .aux {
     flex: 2;
   }
+
+  .nav-tabs {
+    border-bottom: 0;
+    border-top: 1px solid $roxoEscuro;
+    border-top-left-radius: 15px;
+
+    .nav-item {
+
+      .nav-link {
+        padding-top: 45px;
+        padding-bottom: 0;
+        padding-left: 30px;
+        padding-right: 100px;
+        border-bottom: none;
+
+        &.active {
+        background-color: transparent !important;
+        color: white;
+        border-color: $roxoEscuro;
+        }
+      }
+
+      &:first-child{
+        .nav-link {
+            border-top-left-radius: 15px;
+            border-right: 0;
+            
+            &:active {
+              border-top-left-radius: 15px;
+              border-right: 0;
+              border-top: 0;
+            }
+        }
+      }
+
+      &:not(:first-child) {
+        .nav-link {
+            border-top: none;
+            border-right: none;
+            border-left-color: #a76aed;
+            border-top-left-radius: 15px;
+
+            &:active {
+              border-top-left-radius: 15px;
+              border-left: 1px solid #A76AED !important;
+            }
+        }
+      }
+
+    }
+  }
 }
 
 #section7 {
-  background-color: $preto;
   margin-top: 170px;
+  margin-bottom: 80px;
   background: url(../images/bg-palestrantes.png) no-repeat top left;
 
   .box-txt {
@@ -141,15 +210,23 @@
   }
 
   .top-speakers {
+
+    h1 {
+      color: $branco;
+      margin-bottom: 90px;
+    }
+
+
     .speaker {
       max-width: 370px;
+      margin-bottom: 110px;
       figure {
-        border-radius: 8px;
+        border-radius: 10px;
         display: table;
         overflow: hidden;
       }
       p {
-        max-width: 78%;
+        max-width: 83%;
         color: #6f6f6f;
       }
 
@@ -157,13 +234,13 @@
         font-size: $fonte-media;
         color: $branco;
         margin-top: 35px;
-        margin-bottom: 25px;
+        margin-bottom: 17px
       }
 
       .office {
         color: $roxo;
         font-size: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -175,7 +252,7 @@
       max-width: 370px;
       margin-bottom: 85px;
       figure {
-        border-radius: 8px;
+        border-radius: 10px;
         display: table;
         overflow: hidden;
       }
@@ -199,12 +276,12 @@
 // fim section7
 
 #section8 {
-  .carosel-header {
     background: url(../images/bg-palestrantes.png) no-repeat top left;
-    background-size: 78% 100%;
+    background-size: 68%;
     position: relative;
     z-index: 2;
-  }
+
+  
 
   .carosel-body {
     background: url(../images/bgSection8.jpg) center no-repeat;
@@ -237,6 +314,31 @@
 #section9 {
   background-color: $preto;
   padding-top: 140px;
+
+  #demo {
+    color: #fff;
+    font-size: $fonte-media;
+    margin-top: 70px;
+  }
+
+  .dois {
+    color: $roxoEscuro;
+  }
+
+  .countdown-aux {
+    span{
+      &:first-child{
+        margin-right: 52px;
+      }
+      &:nth-child(2){
+        margin-right: 30px;
+      }
+      &:nth-child(3){
+        margin-right: 15px;
+      }
+    }
+  }
+
   .single-ticket {
     border-radius: 8px;
     padding-bottom: 45px;
@@ -258,14 +360,25 @@
 
       .price {
         font-size: 28px;
+        background: $gradiente;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       p {
         color: $branco;
 
+        span {
+          color: #6F6F6F;
+        }
+
         &:last-child {
           font-size: 20px;
         }
+      }
+
+      .btn {
+        margin-top: 30px;
       }
     }
   }
@@ -313,6 +426,21 @@
 #section11 {
   padding-top: 140px;
   padding-bottom: 140px;
+
+  p {
+    color: #C1C1C1;
+    font-size: $fonte-pequena;
+    line-height: 36px;
+  }
+  .txt1 {
+    margin-top: 55px;
+  }
+
+  .btn {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 60px;
+  }
 }
 //section11
 
@@ -324,7 +452,7 @@
     position: relative;
     padding-top: 140px;
     &::after {
-      background: linear-gradient(90deg, #6300d6 0%, #a900d1 100%);
+      background: $gradiente;
       content: "";
       display: block;
       height: 3px;
@@ -335,7 +463,7 @@
   }
 
   h1 {
-    background: linear-gradient(90deg, #6300d6 0%, #a900d1 100%);
+    background: $gradiente;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   }
@@ -353,7 +481,7 @@
       filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.1));
 
       &::before {
-        background: linear-gradient(90deg, #6300d6 0%, #a900d1 100%);
+        background: $gradiente;
         content: "";
         display: block;
         height: 3px;

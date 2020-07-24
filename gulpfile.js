@@ -140,6 +140,7 @@ function javascript() {
     .src([
       folder.src + "js/vendor/jquery.js",
       folder.src + "js/vendor/bootstrap.bundle.js",
+      folder.src + "js/vendor/countdown.jquery.js",
     ])
     .pipe(sourcemaps.init())
     .pipe(concat("vendor.js"))

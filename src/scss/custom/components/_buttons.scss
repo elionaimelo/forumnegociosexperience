@@ -1,3 +1,24 @@
+.btn-1 {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 22px;
+  i {
+    margin-left: 14px;
+    color: $roxoEscuro;
+  }
+}
+
+.btn-2 {
+  @extend .btn-1;
+  background: linear-gradient(-90deg, #a900d1 0%, #6300d6 100%); 
+  color: white;
+
+  i {
+    color: white;
+  }
+}
+
 .btn-3 {
   background-color: $preto;
   border-top-right-radius: 8px;
@@ -7,7 +28,26 @@
   font-size: 22px;
   
   i {
-    color: $roxo;
+    color: $roxoEscuro;
     margin-left: 6px;
+  }
+}
+
+.btn-4 {
+  @extend .btn-1;
+  padding-left: 75px;
+  padding-right: 75px;
+  color: $roxoEscuro;
+}
+
+
+.btn-vaga {
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0px 10px 60px rgba(115, 0, 199, 0.5);
+  &:hover {
+    color: white;
+    border-radius: 8px;
+    background: $gradiente;
   }
 }
