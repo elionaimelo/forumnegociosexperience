@@ -391,6 +391,17 @@
   background: linear-gradient(#000 20%, rgba(0, 0, 0, 0) 20%),
     linear-gradient(white 80%, white 80%);
 
+    h2 {
+      background: $gradiente;
+      background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: $fonte-pequena;
+      line-height: 36px;
+    }
+
   .col-10 {
     padding-left: 90px;
   }
