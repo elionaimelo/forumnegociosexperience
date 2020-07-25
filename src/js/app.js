@@ -1,125 +1,119 @@
+var estado = 0,
+  vw = $(window).width();
+$(".bt-duvidas a").click(function () {
+  var delay_time = 0;
+  $("#hamburger").toggleClass("open");
+  if (estado === 0) {
+    TweenMax.to($("#bg-menu-mobile"), 1, {
+      x: -vw,
+      ease: Expo.easeInOut,
+    });
+
+    $(".nav-mb li").each(function () {
+      TweenMax.to($(this), 1.2, {
+        x: -vw,
+        scaleX: 1,
+        delay: delay_time,
+        ease: Expo.easeInOut,
+      });
+      delay_time += 0.04;
+    });
+    estado = 1;
+  } else {
+    estado = 0;
+    TweenMax.to($("#bg-menu-mobile"), 1.2, {
+      x: 0,
+      ease: Expo.easeInOut,
+    });
+    $(".nav-mb li").each(function () {
+      TweenMax.to($(this), 1, {
+        x: 0,
+        delay: delay_time,
+        ease: Expo.easeInOut,
+      });
+      delay_time += 0.02;
+    });
+  }
+});
 
 var estado = 0,
-vw = $(window).width();
-$(".bt-duvidas a").click(function() {
-var delay_time = 0;
-$("#hamburger").toggleClass('open');
-if (estado === 0) {
-TweenMax.to($("#bg-menu-mobile"), 1, {
-  x:-vw,
-  ease: Expo.easeInOut
-});
+  vw = $(window).width();
+$("#hamburger").click(function () {
+  var delay_time = 0;
+  $(this).toggleClass("open");
 
-$(".nav-mb li").each(function() {
-  TweenMax.to($(this), 1.2, {
-    x:-vw,
-    scaleX: 1,
-    delay: delay_time,
-    ease: Expo.easeInOut
-  });
-  delay_time += .04;
-});
-estado = 1;
-} else {
-estado = 0;
-TweenMax.to($("#bg-menu-mobile"), 1.2, {
-  x:0,
-  ease: Expo.easeInOut
-});
-$(".nav-mb li").each(function() {
-  TweenMax.to($(this), 1, {
-    x:0,
-    delay: delay_time,
-    ease: Expo.easeInOut
-  });
-  delay_time += .02;
-});
-}
-});
+  if (estado === 0) {
+    TweenMax.to($("#bg-menu-mobile"), 1, {
+      x: -vw,
+      ease: Expo.easeInOut,
+    });
 
-var estado = 0,
-vw = $(window).width();
-$("#hamburger").click(function() {
-var delay_time = 0;
-$(this).toggleClass('open');
-
-if (estado === 0) {
-TweenMax.to($("#bg-menu-mobile"), 1, {
-  x:-vw,
-  ease: Expo.easeInOut
-});
-
-$(".nav-mb li").each(function() {
-  TweenMax.to($(this), 1.2, {
-    x:-vw,
-    scaleX: 1,
-    delay: delay_time,
-    ease: Expo.easeInOut
-  });
-  delay_time += .04;
-});
-estado = 1;
-} else {
-estado = 0;
-TweenMax.to($("#bg-menu-mobile"), 1.2, {
-  x:0,
-  ease: Expo.easeInOut
-});
-$(".nav-mb li").each(function() {
-  TweenMax.to($(this), 1, {
-    x:0,
-    /*
+    $(".nav-mb li").each(function () {
+      TweenMax.to($(this), 1.2, {
+        x: -vw,
+        scaleX: 1,
+        delay: delay_time,
+        ease: Expo.easeInOut,
+      });
+      delay_time += 0.04;
+    });
+    estado = 1;
+  } else {
+    estado = 0;
+    TweenMax.to($("#bg-menu-mobile"), 1.2, {
+      x: 0,
+      ease: Expo.easeInOut,
+    });
+    $(".nav-mb li").each(function () {
+      TweenMax.to($(this), 1, {
+        x: 0,
+        /*
     x:vw,
     scaleX: 2.3,
     */
-    delay: delay_time,
-    ease: Expo.easeInOut
-  });
-  delay_time += .02;
+        delay: delay_time,
+        ease: Expo.easeInOut,
+      });
+      delay_time += 0.02;
+    });
+  }
 });
-}
+
+$("#carosel1").carousel({
+  interval: 10000000000 * 10,
 });
 
-// $(document).ready(function(){
-//   $(".regular").slick({
-//     dots: true,
-//     infinite: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1
-//   });
-// });
-      // Set the date we're counting down to
-      var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+// Update the count down every 1 second
+var x = setInterval(function () {
+  // Get today's date and time
+  var now = new Date().getTime();
 
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
 
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML =
-          days +
-          " <span class='dois'>:</span> " +
-          hours +
-          " <span class='dois'>:</span> " +
-          minutes +
-          " <span class='dois'>:</span> " +
-          seconds;
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "É HOJE";
-        }
-      }, 1000);
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML =
+    days +
+    " <span class='dois'>:</span> " +
+    hours +
+    " <span class='dois'>:</span> " +
+    minutes +
+    " <span class='dois'>:</span> " +
+    seconds;
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "É HOJE";
+  }
+}, 1000);
