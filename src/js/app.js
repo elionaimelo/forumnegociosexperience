@@ -83,6 +83,22 @@ $("#carosel1").carousel({
   interval: 10000000000 * 10,
 });
 
+var prev = document.getElementById("bt-prev");
+var next = document.getElementById("bt-next");
+
+count = 1;
+
+if(count >= 1 && count <= 10){
+  prev.onclick = function() {
+    count -= 1;
+    document.getElementById("output").innerHTML = count;
+  };
+  next.onclick = function() {
+    count += 1;
+    document.getElementById("output").innerHTML = count;
+  };
+}
+
 
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
