@@ -1,5 +1,11 @@
-@media (min-width: 1200px) {
+@media (max-width: 1440px) {
+  #section3 {
+    background-size: 90%;
+  }
+ }
+
+@media (max-width: 1280px) {
  #section3 {
-   background-size: 91.2%;
+   background-size: 95.2%;
  }
 }

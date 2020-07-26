@@ -46,7 +46,7 @@ p {
 main {
   position: relative;
   background-color: $preto;
-  top: 750px;
+  top: 730px;
   z-index: 2;
   min-height: 300px;
   margin-bottom: 164px;
@@ -68,9 +68,11 @@ main {
   h2 {
     color: $branco;
     font-size: 20px;
+    font-weight: 100;
     margin-bottom: 0;
     span {
       background: $gradiente;
+      font-weight: bold;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       font-size: 40px;

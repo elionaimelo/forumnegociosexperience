@@ -23,7 +23,8 @@
 
 .btn-2 {
   @extend .btn-1;
-  background: linear-gradient(-90deg, #a900d1 0%, #6300d6 100%); 
+  background: linear-gradient(90deg, #6300d6 0%, #a900d1 100%); 
+  border-color: #6300d6;
   color: white;
 
   i {
@@ -73,6 +74,7 @@
   border-radius: 8px;
   box-shadow: 0px 10px 60px rgba(115, 0, 199, 0.5);
   transition: all 0.2s ease-in-out;
+  width: inherit;
 
   svg {
     visibility: hidden;

@@ -1,8 +1,12 @@
+.wrapper {
+  overflow: hidden;
+}
+
 #section1 {
   margin-top: 65px;
   background: url(../images/bgSection1.jpg) center no-repeat;
   background-size: cover;
-  height: 750px;
+  height: 670px;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -353,6 +357,7 @@
   .bg2 {
     background: url(../images/bgSection8.jpg) bottom no-repeat;
     height: 900px;
+    min-height: 570px;
     width: 100%;
     top: 235px;
     position: absolute;
@@ -449,7 +454,7 @@
   background-color: $preto;
   padding-top: 140px;
 
-  #demo {
+  #timer {
     color: #fff;
     font-size: $fonte-media;
     margin-top: 100px;
