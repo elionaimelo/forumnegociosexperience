@@ -7,11 +7,35 @@
   z-index: 1;
   width: 100%;
 
+  .hover-btn {
+    background: url(../images/seta.png) no-repeat;
+    background-position: 0 -65px;
+    margin-top: 50px;
+    width: 24px;
+    height: 40px;
+    transition: all 0.22s ease-in-out;
+    
+
+    &:hover {
+      background: url(../images/seta.png) no-repeat;
+      background-position: 0 -15px;
+    }
+  }
+
   .nav {
     a {
       color: white;
+      white-space: nowrap;
+      font-weight: bold;
+      letter-spacing: 0.15px;
+      padding: 10px 25px;
+      border-radius: 8px;
+
+      &:hover {
+        background: linear-gradient(-90deg, rgba(169, 0, 209,0.5) 0%, rgba(99, 0, 214,0.5) 100%);
+      }
       &:not(:last-child) {
-        margin-right: 60px;
+        margin-right: 90px;
       }
     }
   }
@@ -104,6 +128,8 @@
   h2 {
     font-size: $fonte-media;
     color: white;
+    font-style: normal;
+    font-weight: bold;
   }
 
   .embed-responsive {
@@ -158,10 +184,11 @@
         padding-left: 30px;
         padding-right: 100px;
         border-bottom: none;
+        color: #A76AED;
 
         &.active {
           background-color: transparent !important;
-          color: white;
+          color: white !important;
           border-color: $roxoEscuro;
         }
       }
@@ -170,11 +197,22 @@
         .nav-link {
           border-top-left-radius: 15px;
           border-right: 0;
+          border-left: 1px solid #7300C7;
+
+          &:focus {
+            border-color: #7300C7;
+          }
+
+          &:hover {
+            border-top-color: transparent;
+          }
 
           &:active {
             border-top-left-radius: 15px;
+            border-top-color: transparent;
             border-right: 0;
-            border-top: 0;
+            border-top: 0 !important;
+            border-left: 1px solid #7300C7;
           }
         }
       }
@@ -184,7 +222,11 @@
           border-top: none;
           border-right: none;
           border-left-color: #a76aed;
-          border-top-left-radius: 15px;
+          border-top-left-radius: 0px;
+
+          &:focus {
+            border-radius: 0 !important;
+          }
 
           &:active {
             border-top-left-radius: 15px;
@@ -192,6 +234,21 @@
           }
         }
       }
+    }
+    // fim .nav-item
+  }
+
+  .tab-content {
+    padding-top: 140px;
+
+    .content {
+      &:not(:last-child){
+        margin-right: 106px;
+      }
+    }
+
+    p {
+      color: $roxo;
     }
   }
 }
@@ -222,6 +279,7 @@
       p {
         max-width: 83%;
         color: #6f6f6f;
+        letter-spacing: 0.15px;
       }
 
       h3 {
@@ -560,6 +618,7 @@
 
     figure {
       position: relative;
+      background-color: white;
       z-index: 1;
       filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.1));
 

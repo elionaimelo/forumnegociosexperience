@@ -81,6 +81,7 @@ $("#hamburger").click(function () {
 
 $("#carosel1").carousel({
   interval: 10000000000 * 10,
+  wrap: false
 });
 
 var prev = document.getElementById("bt-prev");
@@ -88,16 +89,19 @@ var next = document.getElementById("bt-next");
 
 count = 1;
 
-if(count >= 1 && count <= 10){
-  prev.onclick = function() {
+prev.onclick = function () {
+  if (count > 1) {
     count -= 1;
     document.getElementById("output").innerHTML = count;
-  };
-  next.onclick = function() {
+  }
+};
+next.onclick = function () {
+  if (count >= 1 && count < 10) {
     count += 1;
     document.getElementById("output").innerHTML = count;
-  };
-}
+  }
+};
+
 
 
 // Set the date we're counting down to

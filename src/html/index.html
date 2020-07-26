@@ -51,7 +51,9 @@
             <h1 class="title1">
               O maior evento de empreendedorismo do Brasil agora Online
             </h1>
-            <img src="assets/images/seta.png" class="arrow img-fluid" alt="" />
+            <a href="#" class="hover-btn d-block">
+              <!-- <img src="assets/images/seta.png" class="arrow img-fluid" alt="" /> -->
+            </a>
           </div>
         </div>
       </div>
@@ -85,7 +87,13 @@
                   href="#section"
                   class="btn-vaga h-100 d-flex justify-content-center align-items-center"
                 >
-                  Garanta sua vaga!
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                  <g id="checkmark-circle-outline" transform="translate(-64 -64)">
+                    <path id="Caminho_39" data-name="Caminho 39" d="M96,80A16,16,0,1,0,80,96,16,16,0,0,0,96,80Z" />
+                    <path id="Caminho_40" data-name="Caminho 40" d="M176,176l-11.2,13.333L160,184" transform="translate(-88 -102.667)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+                  </g>
+                </svg>
+                 Garanta sua vaga!
                 </a>
               </div>
             </div>
@@ -210,20 +218,20 @@
                 <!-- Tab panes -->
                 <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="profile">
-                    <div class="d-inline-block">
+                    <div class="content d-inline-block">
                       <h1>5 mil</h1>
                       <p>
                         participantes diários
                       </p>
                     </div>
 
-                    <div class="d-inline-block">
+                    <div class="content d-inline-block">
                       <h1>30 horas</h1>
                       <p>
                         de conteúdo sem parar
                       </p>
                     </div>
-                    <div class="d-inline-block">
+                    <div class="content d-inline-block">
                       <h1>28 milhões</h1>
                       <p>
                         em negócios gerados no evento
@@ -231,20 +239,20 @@
                     </div>
                   </div>
                   <div role="tabpanel" class="tab-pane fade" id="buzz">
-                    <div class="d-inline-block">
+                    <div class="content d-inline-block">
                       <h1>4 mil</h1>
                       <p>
                         participantes diários
                       </p>
                     </div>
 
-                    <div class="d-inline-block">
+                    <div class="content d-inline-block">
                       <h1>30 horas</h1>
                       <p>
                         de conteúdo sem parar
                       </p>
                     </div>
-                    <div class="d-inline-block">
+                    <div class="content d-inline-block">
                       <h1>28 milhões</h1>
                       <p>
                         em negócios gerados no evento
@@ -599,18 +607,22 @@
                     Top10 que já passaram pelo evento…
                   </h1>
 
-                  <p class="count-top10"> <span id="output" onclick="myFunction()">1</span> &mdash;&mdash;&mdash; <span>10</span></p>
+                  <p class="count-top10"> <span id="output">1</span> &mdash;&mdash;&mdash; <span>10</span></p>
                  </div>
                 </div>
               </div>
+              <!-- fim row -->
             </div>
+            <!-- fim container -->
           </div>
+          <!-- fim bg1 -->
           <div class="bg2"></div>
           <div class="container h-100">
             <div
               id="carosel1"
               class="carousel slide carousel-fade h-100"
               data-ride="carousel"
+              data-wrap="false"
             >
               <ol class="carousel-indicators">
                 <li
@@ -671,7 +683,9 @@
                       >
                     </h1>
                   </div>
+                  <!-- fim carousel-body -->
                 </div>
+                <!-- fim carousel-item -->
                 <div class="carousel-item">
                   <figure class="mask-speaker10 float-right">
                     <div class="img-aux position-relative">
@@ -696,9 +710,213 @@
                     </h1>
                   </div>
                 </div>
+                <div class="carousel-item">
+                  <figure class="mask-speaker10 float-right">
+                    <div class="img-aux position-relative">
+                    <img
+                      src="assets/images/augusto-cury.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <p class="name position-absolute">
+                      Terceiro
+                    </p>
+                  </div>
+                  </figure>
+
+                  <div class="carosel-body">
+                    <p>— Terceiro carrosel</p>
+
+                    <h1>
+                      <span
+                        >Terceiro carrosel</span
+                      >
+                    </h1>
+                  </div>
+                </div>
+                <!-- fim carousel-item -->
+                <div class="carousel-item">
+                  <figure class="mask-speaker10 float-right">
+                    <div class="img-aux position-relative">
+                    <img
+                      src="assets/images/ricardoAmorim.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <p class="name position-absolute">
+                      Quarto
+                    </p>
+                  </div>
+                  </figure>
+
+                  <div class="carosel-body">
+                    <p>— Quarto carrosel</p>
+
+                    <h1>
+                      <span
+                        >Quarto carrosel</span
+                      >
+                    </h1>
+                  </div>
+                </div>
+                <!-- fim carousel-item -->
+                <div class="carousel-item">
+                  <figure class="mask-speaker10 float-right">
+                    <div class="img-aux position-relative">
+                    <img
+                      src="assets/images/augusto-cury.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <p class="name position-absolute">
+                      Quinto
+                    </p>
+                  </div>
+                  </figure>
+
+                  <div class="carosel-body">
+                    <p>— Quinto carrosel</p>
+
+                    <h1>
+                      <span
+                        >Quinto carrosel</span
+                      >
+                    </h1>
+                  </div>
+                </div>
+                <!-- fim carousel-item -->
+                <div class="carousel-item">
+                  <figure class="mask-speaker10 float-right">
+                    <div class="img-aux position-relative">
+                    <img
+                      src="assets/images/ricardoAmorim.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <p class="name position-absolute">
+                      Sexto
+                    </p>
+                  </div>
+                  </figure>
+
+                  <div class="carosel-body">
+                    <p>— Sexto carrosel</p>
+
+                    <h1>
+                      <span
+                        >Sexto carrosel</span
+                      >
+                    </h1>
+                  </div>
+                </div>
+                <!-- fim carousel-item -->
+                <div class="carousel-item">
+                  <figure class="mask-speaker10 float-right">
+                    <div class="img-aux position-relative">
+                    <img
+                      src="assets/images/augusto-cury.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <p class="name position-absolute">
+                      Sétimo
+                    </p>
+                  </div>
+                  </figure>
+
+                  <div class="carosel-body">
+                    <p>— Sétimo carrosel</p>
+
+                    <h1>
+                      <span
+                        >Sétimo carrosel</span
+                      >
+                    </h1>
+                  </div>
+                </div>
+                <!-- fim carousel-item -->
+                <div class="carousel-item">
+                  <figure class="mask-speaker10 float-right">
+                    <div class="img-aux position-relative">
+                    <img
+                      src="assets/images/ricardoAmorim.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <p class="name position-absolute">
+                      Oitavo
+                    </p>
+                  </div>
+                  </figure>
+
+                  <div class="carosel-body">
+                    <p>— Oitavo carrosel</p>
+
+                    <h1>
+                      <span
+                        >Oitavo carrosel</span
+                      >
+                    </h1>
+                  </div>
+                </div>
+                <!-- fim carousel-item -->
+                <div class="carousel-item">
+                  <figure class="mask-speaker10 float-right">
+                    <div class="img-aux position-relative">
+                    <img
+                      src="assets/images/augusto-cury.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <p class="name position-absolute">
+                      Nono
+                    </p>
+                  </div>
+                  </figure>
+
+                  <div class="carosel-body">
+                    <p>— IstoÉ Negócios</p>
+
+                    <h1>
+                      <span
+                        >Desemprego pós-pandemia deve levar mais brasileiros a abrir próprio negócio</span
+                      >
+                    </h1>
+                  </div>
+                </div>
+                <!-- fim carousel-item -->
+                <div class="carousel-item">
+                  <figure class="mask-speaker10 float-right">
+                    <div class="img-aux position-relative">
+                    <img
+                      src="assets/images/ricardoAmorim.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <p class="name position-absolute">
+                     Décimo
+                    </p>
+                  </div>
+                  </figure>
+
+                  <div class="carosel-body">
+                    <p>— Terceiro carrosel</p>
+
+                    <h1>
+                      <span
+                        >Terceiro carrosel</span
+                      >
+                    </h1>
+                  </div>
+                </div>
+                <!-- fim carousel-item -->
+              
               </div>
+              <!-- fim carousel-inner -->
             </div>
+            <!-- fim carosel1 -->
           </div>
+          <!-- fim container -->
         </section>
         <!-- fim section8 -->
 
@@ -892,7 +1110,7 @@
                   <figure>
                     <img
                       src="assets/images/sympla.jpg"
-                      class="img-fluid"
+                      class="img-fluid d-block mx-auto"
                       alt=""
                     />
                   </figure>
@@ -900,8 +1118,8 @@
                 <div class="col-md-3">
                   <figure>
                     <img
-                      src="assets/images/sympla.jpg"
-                      class="img-fluid"
+                      src="assets/images/Sicoob.jpg"
+                      class="img-fluid d-block mx-auto"
                       alt=""
                     />
                   </figure>
@@ -909,8 +1127,8 @@
                 <div class="col-md-3">
                   <figure>
                     <img
-                      src="assets/images/sympla.jpg"
-                      class="img-fluid"
+                      src="assets/images/Sebrae.jpg"
+                      class="img-fluid d-block mx-auto"
                       alt=""
                     />
                   </figure>
@@ -918,8 +1136,8 @@
                 <div class="col-md-3">
                   <figure>
                     <img
-                      src="assets/images/sympla.jpg"
-                      class="img-fluid"
+                      src="assets/images/Unimed.jpg"
+                      class="img-fluid d-block mx-auto"
                       alt=""
                     />
                   </figure>
@@ -929,8 +1147,8 @@
                 <div class="col-md-3">
                   <figure>
                     <img
-                      src="assets/images/sympla.jpg"
-                      class="img-fluid"
+                      src="assets/images/intertv.jpg"
+                      class="img-fluid d-block mx-auto"
                       alt=""
                     />
                   </figure>
@@ -938,8 +1156,8 @@
                 <div class="col-md-3">
                   <figure>
                     <img
-                      src="assets/images/sympla.jpg"
-                      class="img-fluid"
+                      src="assets/images/JovemPan.jpg"
+                      class="img-fluid d-block mx-auto"
                       alt=""
                     />
                   </figure>
@@ -947,8 +1165,8 @@
                 <div class="col-md-3">
                   <figure>
                     <img
-                      src="assets/images/sympla.jpg"
-                      class="img-fluid"
+                      src="assets/images/falasindico.jpg"
+                      class="img-fluid d-block mx-auto"
                       alt=""
                     />
                   </figure>
@@ -956,8 +1174,8 @@
                 <div class="col-md-3">
                   <figure>
                     <img
-                      src="assets/images/sympla.jpg"
-                      class="img-fluid"
+                      src="assets/images/Andinu.jpg"
+                      class="img-fluid d-block mx-auto"
                       alt=""
                     />
                   </figure>
