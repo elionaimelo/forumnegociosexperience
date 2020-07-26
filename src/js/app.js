@@ -124,11 +124,11 @@ var x = setInterval(function () {
   // Output the result in an element with id="demo"
   document.getElementById("demo").innerHTML =
     days +
-    " <span class='dois'>:</span> " +
+    " <span class='dois'>&thinsp;:&thinsp;</span> " +
     hours +
-    " <span class='dois'>:</span> " +
+    " <span class='dois'>&thinsp;:&thinsp;</span> " +
     minutes +
-    " <span class='dois'>:</span> " +
+    " <span class='dois'>&thinsp;:&thinsp;</span> " +
     seconds;
 
   // If the count down is over, write some text

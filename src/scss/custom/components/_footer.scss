@@ -1,11 +1,18 @@
 #footer {
-  height: 650px;
+  height: 680px;
   background:$preto url(../images/bgFooter.jpg) bottom right no-repeat;
   padding-top: 115px;
 
 
   h2 {
     color: $branco;
+    font-weight: bold;
+
+    span {
+      background: linear-gradient(-90deg, #a900d1 0%, #6300d6 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   .social {
