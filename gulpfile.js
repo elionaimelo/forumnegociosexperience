@@ -15,8 +15,8 @@ const gulp = require("gulp"),
 
 const folder = {
   src: "src/", // aquivos fontes
-  dist: "../forum/", // arquivos finais
-  dist_assets: "../forum/assets/", //demais arquivos
+  dist: "dist/", // arquivos finais
+  dist_assets: "dist/assets/", //demais arquivos
 };
 
 
@@ -27,7 +27,7 @@ Copiando arquivos da pasta dele no node_modules para o diretório js do projeto
 function copyAssets(done) {
   var assets = {
     js: [
-      "./node_modules/jquery/dist/jquery.min.js",
+      // "./node_modules/jquery/dist/jquery.min.js",
       "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
       "./node_modules/slick-carousel/slick/slick.min.js",
     ],
