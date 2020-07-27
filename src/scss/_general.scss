@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font1;
   text-rendering: optimizeLegibility;
@@ -60,10 +64,10 @@ main {
 }
 
 .tabs-custom1 {
-  margin-top: -40px;
+  margin-top: -50px;
   position: absolute;
   z-index: 10;
-  width: 100%;
+  width: 97.9%;
 
   h2 {
     color: $branco;

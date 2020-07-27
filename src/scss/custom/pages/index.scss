@@ -1,12 +1,9 @@
-.wrapper {
-  overflow: hidden;
-}
 
 #section1 {
-  margin-top: 65px;
+  padding-top: 65px;
   background: url(../images/bgSection1.jpg) center no-repeat;
   background-size: cover;
-  height: 670px;
+  height: 75vh;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -27,12 +24,13 @@
   }
 
   .nav {
+    margin-right: -29px;
     a {
       color: white;
       white-space: nowrap;
       font-weight: bold;
       letter-spacing: 0.15px;
-      padding: 10px 25px;
+      padding: 15px 25px;
       border-radius: 8px;
 
       &:hover {
@@ -62,7 +60,6 @@
 #section2 {
   background: url(../images/bgSection2.jpg) no-repeat;
   background-size: cover;
-
   background-color: $preto;
 
   .aux-row {
@@ -125,7 +122,7 @@
 
 #section3 {
   background: url(../images/bg-palestrantes.png) no-repeat top left;
-  background-size: 80%;
+  background-size: 79.2%;
 
   .box-txt {
     margin-bottom: 80px;
@@ -150,6 +147,7 @@
   background: #000 url(../images/bgSection5.png) center right no-repeat;
   padding-top: 250px;
   padding-bottom: 220px;
+  margin-top: -80px;
   // border-bottom: 1px solid #707070;
 
   .text-white {
@@ -345,6 +343,11 @@
     }
   }
 
+  .mask-speaker10 {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+  }
 
   .bg1 {
     background: url(../images/bg-palestrantes.png) no-repeat top left;
