@@ -44,7 +44,7 @@
           <div class="col-md-9 d-none d-md-block">
             <nav class="nav d-flex justify-content-end">
               <a href="#section7" class="d-inline-block">Palestrantes</a>
-              <a href="http://" class="d-inline-block">Seja um patrocinador</a>
+              <a href="#" data-toggle="modal" data-target="#patrocinador" class="d-inline-block">Seja um patrocinador</a>
             </nav>
             <!-- fim nav -->
           </div>
@@ -1010,12 +1010,12 @@
                       </span>
                     </p>
     
-                    <a href="http://" class="btn btn-4 d-none d-md-block mx-auto"
+                    <a href="#" data-toggle="modal" data-target="#subscription" class="btn btn-4 d-none d-md-block mx-auto"
                       >Inscreva-se agora <i class="fas fa-arrow-right"></i
                     ></a>
                   </article>
 
-                  <a href="http://" class="btn btn-4 d-block d-md-none"
+                  <a href="#" data-toggle="modal" data-target="#subscription" class="btn btn-4 d-block d-md-none"
                       >Inscreva-se agora <i class="fas fa-arrow-right"></i
                     ></a>
                 </div>
@@ -1262,6 +1262,11 @@
     </section>
     <!-- fim newsletter -->
     </div>
+    <!-- fim wrapper -->
+
+    <!-- area dos modais -->
+    @@include('./partials/modal-patrocinador.html')
+    @@include('./partials/modal-inscricao.html')
 
     <!-- Vendor js -->
     <script src="assets/js/vendor.js"></script>

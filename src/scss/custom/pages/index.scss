@@ -653,3 +653,31 @@
     }
   }
 }
+
+//fim section12
+
+.modal{
+
+  .form-check-label {
+    font-weight: 100;
+  }
+
+  h1 {
+    font-size: 28px;
+    color: black;
+  }
+  .modal-body {
+    padding: 6rem 5rem;
+
+    header {
+      margin-bottom: 55px;
+    }
+  }
+
+  .modal-footer {
+    border:none;
+    footer {
+      width: 100%;
+    }
+  }
+}

@@ -112,3 +112,32 @@
     }
   }
 }
+
+.btn-5 {
+  @extend .btn-1;
+  background: black;
+  border:none;
+  padding:20px 30px;
+  color: white;
+  i {
+    color: white;
+  }
+}
+
+.btn-6 {
+  @extend .btn-2;
+  border:none;
+  padding:20px 30px;
+  color: white;
+  i {
+    color: white;
+  }
+  
+  &:hover {
+    background: linear-gradient(90deg, #6300d6 0%, #a900d1 100%) !important; 
+
+    i {
+      color: white;
+    }
+  }
+}
