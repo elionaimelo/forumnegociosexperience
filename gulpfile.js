@@ -27,8 +27,9 @@ Copiando arquivos da pasta dele no node_modules para o diretório js do projeto
 function copyAssets(done) {
   var assets = {
     js: [
-      "./node_modules/jquery/dist/jquery.slim.js",
+      "./node_modules/jquery/dist/jquery.min.js",
       "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+      "./node_modules/slick-carousel/slick/slick.min.js",
     ],
   };
   //adicionar outras dependecias, ou seja, qlq outro jquery fora os padrões. Exemplo abaixo
@@ -138,8 +139,9 @@ function javascript() {
 
   gulp
     .src([
-      folder.src + "js/vendor/jquery.js",
+      folder.src + "js/vendor/jquery.min.js",
       folder.src + "js/vendor/bootstrap.bundle.js",
+      folder.src + "js/vendor/slick.min.js",
     ])
     .pipe(sourcemaps.init())
     .pipe(concat("vendor.js"))

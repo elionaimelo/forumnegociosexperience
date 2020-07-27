@@ -137,3 +137,75 @@ var x = setInterval(function () {
     document.getElementById("timer").innerHTML = "É HOJE";
   }
 }, 1000);
+
+
+$.fn.isOnScreen = function () {
+  var win = $(window);
+  var viewport = {
+      top: win.scrollTop(),
+      left: win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+  viewport.bottom = viewport.top + win.height();
+  var bounds = this.offset();
+  bounds.right = bounds.left + this.outerWidth();
+  bounds.bottom = bounds.top + (this.outerHeight()-600);
+  return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+
+$(window).scroll(function () {
+  if ($('#section9').isOnScreen() == true) {
+      $('#botao-fixo').hide();
+  }
+  else if ($('#footer').isOnScreen() == true) {
+      $('#botao-fixo').hide();
+  }
+  else if ($('#newsletter').isOnScreen() == true) {
+      $('#botao-fixo').hide();
+  }
+  else{
+      $('#botao-fixo').show();
+  }
+});
+
+
+$(document).on('ready', function() {
+
+  $(".regular").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:false,
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: '30px',
+           adaptiveHeight: true,
+        }
+      }
+    ]
+  });
+  $(".regular1").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:false,
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: '30px',
+           adaptiveHeight: true,
+        }
+      }
+    ]
+  });
+ 
+});

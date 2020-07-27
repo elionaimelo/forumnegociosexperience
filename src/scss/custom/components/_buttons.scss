@@ -53,11 +53,22 @@
   color: $branco;
   font-size: 22px;
   transition: all 0.2s ease-in-out;
+  width: 195px;
   
   i {
     transition: all 0.2s ease-in-out;
     color: $roxoEscuro;
     margin-left: 6px;
+  }
+
+  &:hover {
+    background-color: $roxoHover;
+    color: white;
+
+    i {
+      padding-left: 9px;
+      color: $roxo;
+    }
   }
 }
 

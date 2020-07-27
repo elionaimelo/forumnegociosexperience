@@ -5,6 +5,13 @@
  }
 
 @media (max-width: 1280px) {
+  .wrapper {
+    overflow: hidden;
+  }
+
+  main {
+    top: 630px;
+  }
  #section3 {
    background-size: 94.2%;
  }

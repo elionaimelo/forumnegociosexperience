@@ -9,6 +9,10 @@
   will-change: transform;
 }
 
+.logo-menu {
+  margin:35px 21px;
+}
+
 .logoForum2 {
   margin: 40px 0 0 26px;
 }
@@ -64,6 +68,10 @@
   -moz-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.25s ease-in-out;
+}
+
+#hamburger.open {
+  position: fixed;
 }
 
 #hamburger span:nth-child(1) {
