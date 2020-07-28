@@ -171,9 +171,12 @@ $.fn.isOnScreen = function () {
 $(window).scroll(function () {
   if ($("#section9").isOnScreen() == true) {
     $("#botao-fixo").hide();
-  } else {
+  }else if($("#footer").isOnScreen() == true) {
+    $("#botao-fixo").hide();
+  }else {
     $("#botao-fixo").show();
   }
+
 });
 
 var width = $(window).width();
