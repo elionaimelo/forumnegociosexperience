@@ -13418,7 +13418,8 @@ readers do not read off random characters that represent icons */
 
 #section9 {
   background-color: #000000;
-  padding-top: 140px; }
+  padding-top: 140px;
+  padding-bottom: 100px; }
   #section9 #timer {
     color: #fff;
     font-size: 40px;
@@ -13464,7 +13465,7 @@ readers do not read off random characters that represent icons */
       width: 80%; }
 
 #section10 {
-  margin-top: 150px;
+  margin-top: -4px;
   padding-bottom: 150px;
   background: linear-gradient(#000 20%, rgba(0, 0, 0, 0) 20%), linear-gradient(white 80%, white 80%); }
   #section10 h2 {
@@ -13731,7 +13732,8 @@ readers do not read off random characters that represent icons */
       -webkit-transform: scaleX(-1);
               transform: scaleX(-1); }
   #section9 {
-    padding-top: 15px; }
+    padding-top: 15px;
+    padding-bottom: 0; }
     #section9 h1 {
       line-height: 40px; }
     #section9 #timer {
@@ -13771,7 +13773,7 @@ readers do not read off random characters that represent icons */
     #section10 .carousel-control-next {
       top: -90px; }
     #section10 h2 {
-      margin-top: -40px;
+      margin-top: -95px;
       margin-bottom: 30px; }
     #section10 p {
       font-weight: 100; }
