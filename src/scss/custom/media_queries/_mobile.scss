@@ -5,15 +5,89 @@
     height: 568px;
   }
 
+  .btn-2 {
+    border-radius: 0;
+    border: none;
+  }
+
+  #section8 {
+    .bg1 {
+      background-size: cover;
+      padding-top: 40px;
+      border-radius: 10px;
+      width: 92%;
+      left: 50%;
+      margin-left: -173px;
+      background-image: url(../images/bgSection8mb.png);
+    }
+
+    .bg2 {
+      top: 518px;
+      height: 280px;
+      background-size: cover;
+    }
+
+    .mask-speaker10 {
+      margin-top: 233px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      overflow: inherit;
+    }
+
+
+    #carousel1 {
+      .carousel-control-prev, 
+      .carousel-control-next {
+        top: 500px;
+      }
+
+      .carousel-control-prev {
+        left: 20px;
+      }
+
+      .carosel-body {
+        margin-top: 284px;
+      }
+    }
+  }
+
   #section9 {
+    padding-top: 15px;
     .single-ticket {
       position: relative;
       padding-bottom: 0;
+    }
+
+    .btn-4 {
+      background: linear-gradient(-90deg,#a900d1 0,#6300d6 100%);
+      border:none;
+      border-radius: 0;
+      margin-top: 45px;
+      color: #fff;
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  #section10 {
+    h2 {
+      margin-top: -95px;
+      margin-bottom: 30px;
     }
   }
 
   main {
     margin-bottom: 1086px;
   }
+
+  #footer {
+    padding-top: 60px;
+    min-height: 610px;
+    background: url(../images/bgRodapeMb.png) bottom center no-repeat;
+    background-size: contain;
+  }
+
 
 }

@@ -13591,9 +13591,6 @@ readers do not read off random characters that represent icons */
     line-height: 40px; }
   main {
     margin-bottom: 986px; }
-  .btn-2, .btn-6 {
-    border-radius: 0;
-    border: none; }
   #section1 {
     z-index: 2;
     margin-top: 40px; }
@@ -13691,19 +13688,10 @@ readers do not read off random characters that represent icons */
     margin-left: 40px;
     margin-bottom: 40px; }
   #section8 .bg1 {
-    background-size: cover;
-    padding-top: 40px;
-    border-radius: 10px;
-    width: 92%;
-    left: 50%;
-    margin-left: -173px;
-    background-image: url(../images/bgSection8mb.png); }
-  #section8 .bg2 {
-    top: 518px;
-    height: 280px;
-    background-size: cover; }
+    height: 350px;
+    background-size: 90% 100%; }
   #section8 .mask-speaker10 {
-    margin-top: 233px;
+    margin-right: -40px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     overflow: inherit; }
@@ -13714,7 +13702,9 @@ readers do not read off random characters that represent icons */
   #section8 #carosel1 .carousel-indicators {
     bottom: 408px; }
   #section8 #carosel1 .carosel-body {
-    margin-top: 284px; }
+    margin-top: 195px; }
+    #section8 #carosel1 .carosel-body p {
+      margin-bottom: 30px; }
     #section8 #carosel1 .carosel-body h1 {
       display: table-cell; }
   #section8 #carosel1 .name {
@@ -13723,16 +13713,15 @@ readers do not read off random characters that represent icons */
     margin-left: -82px; }
   #section8 #carosel1 .carousel-control-prev,
   #section8 #carosel1 .carousel-control-next {
-    top: 500px; }
+    top: 400px; }
   #section8 #carosel1 .carousel-control-prev {
-    left: 20px; }
+    left: 285px; }
   #section8 #carosel1 .carousel-control-next {
     right: 20px; }
     #section8 #carosel1 .carousel-control-next img {
       -webkit-transform: scaleX(-1);
               transform: scaleX(-1); }
   #section9 {
-    padding-top: 15px;
     padding-bottom: 0; }
     #section9 h1 {
       line-height: 40px; }
@@ -13744,16 +13733,8 @@ readers do not read off random characters that represent icons */
       position: relative;
       margin-bottom: 50px;
       padding-bottom: 50px; }
-    #section9 .btn-4 {
-      background: linear-gradient(-90deg, #a900d1 0, #6300d6 100%);
-      border: none;
-      border-radius: 0;
-      margin-top: 45px;
-      color: #fff; }
-      #section9 .btn-4 i {
-        color: #fff; }
   #section10 {
-    margin-top: 0px;
+    margin-top: -5px;
     padding-bottom: 60px; }
     #section10 .wrap {
       padding-left: 15px;
@@ -13772,9 +13753,6 @@ readers do not read off random characters that represent icons */
     #section10 .carousel-control-prev,
     #section10 .carousel-control-next {
       top: -90px; }
-    #section10 h2 {
-      margin-top: -95px;
-      margin-bottom: 30px; }
     #section10 p {
       font-weight: 100; }
   #section11 .btn {
@@ -13788,9 +13766,6 @@ readers do not read off random characters that represent icons */
       #section12 .partners .row {
         margin-bottom: 0; }
   #footer {
-    padding-top: 60px;
-    min-height: 610px;
-    background: url(../images/bgRodapeMb.png) bottom center no-repeat;
     background-size: contain; }
   #newsletter .input-group {
     display: block; }
@@ -13809,8 +13784,53 @@ readers do not read off random characters that represent icons */
     margin-top: 0;
     padding-top: 0;
     height: 568px; }
-  #section9 .single-ticket {
-    position: relative;
-    padding-bottom: 0; }
+  .btn-2, .btn-6 {
+    border-radius: 0;
+    border: none; }
+  #section8 .bg1 {
+    background-size: cover;
+    padding-top: 40px;
+    border-radius: 10px;
+    width: 92%;
+    left: 50%;
+    margin-left: -173px;
+    background-image: url(../images/bgSection8mb.png); }
+  #section8 .bg2 {
+    top: 518px;
+    height: 280px;
+    background-size: cover; }
+  #section8 .mask-speaker10 {
+    margin-top: 233px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    overflow: inherit; }
+  #section8 #carousel1 .carousel-control-prev,
+  #section8 #carousel1 .carousel-control-next {
+    top: 500px; }
+  #section8 #carousel1 .carousel-control-prev {
+    left: 20px; }
+  #section8 #carousel1 .carosel-body {
+    margin-top: 284px; }
+  #section9 {
+    padding-top: 15px; }
+    #section9 .single-ticket {
+      position: relative;
+      padding-bottom: 0; }
+    #section9 .btn-4 {
+      background: linear-gradient(-90deg, #a900d1 0, #6300d6 100%);
+      border: none;
+      border-radius: 0;
+      margin-top: 45px;
+      color: #fff; }
+      #section9 .btn-4 i {
+        color: #fff; }
+  #section10 h2 {
+    margin-top: -95px;
+    margin-bottom: 30px; }
   main {
-    margin-bottom: 1086px; } }
+    margin-bottom: 1086px; }
+  #footer {
+    padding-top: 60px;
+    min-height: 610px;
+    background: url(../images/bgRodapeMb.png) bottom center no-repeat;
+    background-size: contain; } }
