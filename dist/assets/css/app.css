@@ -8099,7 +8099,7 @@ main {
   position: fixed;
   top: 0;
   right: -100%;
-  z-index: 100000000;
+  z-index: 1048;
   background-color: #000000;
   will-change: transform; }
 
@@ -8114,7 +8114,7 @@ main {
   position: absolute;
   list-style: none;
   color: #fff;
-  z-index: 100000000;
+  z-index: 10000;
   margin-left: 26px;
   margin-top: 70px; }
   .nav-mb ul li {
@@ -8125,6 +8125,8 @@ main {
     left: 100%;
     cursor: pointer;
     will-change: transform; }
+    .nav-mb ul li a {
+      color: white; }
 
 #hamburger {
   width: 41px;
@@ -8136,7 +8138,7 @@ main {
   top: 0;
   right: 17px;
   background-color: transparent;
-  z-index: 1000000000; }
+  z-index: 1049; }
 
 #hamburger span {
   z-index: 3;
@@ -8186,8 +8188,10 @@ main {
   bottom: 0;
   padding-left: 22px;
   font-size: 18px;
-  color: #6F6F6F;
   border-top: 1px solid #292929; }
+  .whatsapp-bottom a {
+    color: #6F6F6F;
+    font-weight: 100; }
 
 /*!
  * Font Awesome Free 5.13.1 by @fontawesome - https://fontawesome.com
@@ -13783,7 +13787,7 @@ readers do not read off random characters that represent icons */
   #section1 {
     margin-top: 0;
     padding-top: 0;
-    height: 568px; }
+    height: 450px; }
   .btn-2, .btn-6 {
     border-radius: 0;
     border: none; }
@@ -13804,13 +13808,28 @@ readers do not read off random characters that represent icons */
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     overflow: inherit; }
-  #section8 #carousel1 .carousel-control-prev,
-  #section8 #carousel1 .carousel-control-next {
-    top: 500px; }
-  #section8 #carousel1 .carousel-control-prev {
-    left: 20px; }
-  #section8 #carousel1 .carosel-body {
+  #section8 #carosel1 .carousel-indicators {
+    bottom: 408px; }
+  #section8 #carosel1 .carosel-body {
     margin-top: 284px; }
+    #section8 #carosel1 .carosel-body p {
+      margin-bottom: 75px; }
+    #section8 #carosel1 .carosel-body h1 {
+      display: table-cell; }
+  #section8 #carosel1 .name {
+    left: 50%;
+    bottom: 10px;
+    margin-left: -82px; }
+  #section8 #carosel1 .carousel-control-prev,
+  #section8 #carosel1 .carousel-control-next {
+    top: 500px; }
+  #section8 #carosel1 .carousel-control-prev {
+    left: 20px; }
+  #section8 #carosel1 .carousel-control-next {
+    right: 20px; }
+    #section8 #carosel1 .carousel-control-next img {
+      -webkit-transform: scaleX(-1);
+              transform: scaleX(-1); }
   #section9 {
     padding-top: 15px; }
     #section9 .single-ticket {
@@ -13828,9 +13847,12 @@ readers do not read off random characters that represent icons */
     margin-top: -95px;
     margin-bottom: 30px; }
   main {
-    margin-bottom: 1086px; }
+    margin-bottom: 1086px;
+    top: 460px; }
   #footer {
     padding-top: 60px;
     min-height: 610px;
     background: url(../images/bgRodapeMb.png) bottom center no-repeat;
-    background-size: contain; } }
+    background-size: contain; }
+  .modal .modal-body {
+    padding: 3rem 0.8rem; } }

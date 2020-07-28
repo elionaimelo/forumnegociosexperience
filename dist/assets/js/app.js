@@ -1,6 +1,6 @@
 var estado = 0,
   vw = $(window).width();
-$(".bt-duvidas a").click(function () {
+$(".nav-mb li a").click(function () {
   var delay_time = 0;
   $("#hamburger").toggleClass("open");
   if (estado === 0) {

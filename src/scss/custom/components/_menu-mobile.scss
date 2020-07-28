@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   right: -100%;
-  z-index: 100000000;
+  z-index: 1048;
   background-color: #000000;
   will-change: transform;
 }
@@ -22,7 +22,7 @@
   position: absolute;
   list-style: none;
   color: #fff;
-  z-index: 100000000;
+  z-index: 10000;
   margin-left: 26px;
   margin-top: 70px;
 
@@ -34,6 +34,10 @@
     left: 100%;
     cursor: pointer;
     will-change: transform;
+
+    a {
+      color: white;
+    }
   }
 }
 
@@ -47,7 +51,7 @@
   top: 0;
   right: 17px;
   background-color: transparent;
-  z-index: 1000000000;
+  z-index: 1049;
 }
 
 #hamburger span {
@@ -118,7 +122,11 @@
   bottom: 0;
   padding-left: 22px;
   font-size: 18px;
-  color: #6F6F6F;
   border-top: 1px solid #292929;
+
+  a {
+    color: #6F6F6F;
+    font-weight: 100;
+  }
 }
 
