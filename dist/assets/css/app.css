@@ -13855,4 +13855,7 @@ readers do not read off random characters that represent icons */
     background: url(../images/bgRodapeMb.png) bottom center no-repeat;
     background-size: contain; }
   .modal .modal-body {
-    padding: 3rem 0.8rem; } }
+    padding: 3rem 0.8rem; }
+  .btn-6 {
+    margin-top: 50px;
+    border-radius: 8px; } }
