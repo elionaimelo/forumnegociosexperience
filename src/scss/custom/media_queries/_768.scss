@@ -12,8 +12,7 @@
   
 
   main {
-    top: 53vh;
-    margin-bottom: 734px;
+    margin-bottom: 986px;
   }
 
   .btn-2 {
@@ -22,7 +21,7 @@
   }
 
   #section1 {
-    z-index: 1;
+    z-index: 2;
     
     margin-top: 40px;
     .txt1 {
@@ -257,10 +256,6 @@
         }
       }
     }
-
-    .carosel-body {
-      height: 590px;
-    }
   }
   // fim section8
 
@@ -282,7 +277,8 @@
 
     .single-ticket {
       position: relative;
-      padding-bottom: 0;
+      margin-bottom: 50px;
+      padding-bottom: 50px;
     }
 
     .btn-4 {
@@ -341,6 +337,12 @@
   }
   // fim container10
 
+  #section11  {
+    .btn {
+      width: 100%;
+    }
+  }
+
   #section12 {
     padding-bottom: 60px;
     .container {
@@ -363,7 +365,7 @@
   }
 
   #newsletter {
-    margin-top: 200px;
+    // margin-top: 200px;
     .input-group {
       display: block;
     }

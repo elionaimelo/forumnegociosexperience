@@ -81,7 +81,7 @@ $("#hamburger").click(function () {
 
 $("#carosel1").carousel({
   interval: 10000000000 * 10,
-  wrap: false
+  wrap: false,
 });
 
 var prev = document.getElementById("bt-prev");
@@ -101,8 +101,6 @@ next.onclick = function () {
     document.getElementById("output").innerHTML = count;
   }
 };
-
-
 
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
@@ -138,74 +136,98 @@ var x = setInterval(function () {
   }
 }, 1000);
 
+if ($(this).scrollTop() == 0) {
+  $("#newsletter").hide();
+}
+$(window).scroll(function () {
+  if ($(this).scrollTop() >= 740) {
+    $("#newsletter").show();
+    $("#section1").hide();
+  } else {
+    $("#newsletter").hide();
+    $("#section1").show();
+  }
+});
 
 $.fn.isOnScreen = function () {
   var win = $(window);
   var viewport = {
-      top: win.scrollTop(),
-      left: win.scrollLeft()
+    top: win.scrollTop(),
+    left: win.scrollLeft(),
   };
   viewport.right = viewport.left + win.width();
   viewport.bottom = viewport.top + win.height();
   var bounds = this.offset();
   bounds.right = bounds.left + this.outerWidth();
-  bounds.bottom = bounds.top + (this.outerHeight()-600);
-  return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+  bounds.bottom = bounds.top + this.outerHeight();
+  return !(
+    viewport.right < bounds.left ||
+    viewport.left > bounds.right ||
+    viewport.bottom < bounds.top ||
+    viewport.top > bounds.bottom
+  );
 };
 
 $(window).scroll(function () {
-  if ($('#section9').isOnScreen() == true) {
-      $('#botao-fixo').hide();
-  }
-  else if ($('#footer').isOnScreen() == true) {
-      $('#botao-fixo').hide();
-  }
-  else if ($('#newsletter').isOnScreen() == true) {
-      $('#botao-fixo').hide();
-  }
-  else{
-      $('#botao-fixo').show();
+  if ($("#section9").isOnScreen() == true) {
+    $("#botao-fixo").hide();
+  } else {
+    $("#botao-fixo").show();
   }
 });
 
+var width = $(window).width();
+if (width <= 720) {
+  if ($(this).scrollTop() == 0) {
+    $("#newsletter").hide();
+  }
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 600) {
+      $("#newsletter").show();
+      $("#section1").hide();
+    } else {
+      $("#newsletter").hide();
+      $("#section1").show();
+    }
+  });
+}
 
-$(document).on('ready', function() {
 
+$(document).on("ready", function () {
   $(".regular").slick({
     dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows:false,
+    arrows: false,
     variableWidth: false,
     responsive: [
       {
         breakpoint: 480,
         settings: {
           centerMode: true,
-          centerPadding: '30px',
-           adaptiveHeight: true,
-        }
-      }
-    ]
+          centerPadding: "30px",
+          adaptiveHeight: true,
+        },
+      },
+    ],
   });
   $(".regular1").slick({
     dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows:false,
+    arrows: false,
     variableWidth: false,
     responsive: [
       {
         breakpoint: 480,
         settings: {
           centerMode: true,
-          centerPadding: '30px',
-           adaptiveHeight: true,
-        }
-      }
-    ]
+          centerPadding: "30px",
+          adaptiveHeight: true,
+        },
+      },
+    ],
   });
- 
 });

@@ -142,6 +142,7 @@ function javascript() {
       folder.src + "js/vendor/jquery.min.js",
       folder.src + "js/vendor/bootstrap.bundle.js",
       folder.src + "js/vendor/slick.min.js",
+      folder.src + "js/vendor/jQuery-inView.min.js",
     ])
     .pipe(sourcemaps.init())
     .pipe(concat("vendor.js"))
