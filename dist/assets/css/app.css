@@ -7938,7 +7938,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
@@ -7954,13 +7954,13 @@ a {
     text-decoration: none; }
 
 h1 {
-  font-size: 60px;
+  font-size: 58px;
   color: #fff;
   font-style: normal;
   font-weight: bold; }
 
 h2 {
-  font-size: 40px; }
+  font-size: 36px; }
 
 p {
   font-style: normal;
@@ -12838,7 +12838,8 @@ readers do not read off random characters that represent icons */
   border-radius: 8px;
   box-shadow: 0px 10px 60px rgba(115, 0, 199, 0.5);
   transition: all 0.2s ease-in-out;
-  width: inherit; }
+  width: inherit;
+  border: 2px solid #7300C7; }
   .btn-vaga svg {
     visibility: hidden;
     margin-left: -60px;
@@ -13171,7 +13172,7 @@ readers do not read off random characters that represent icons */
   #section2 .tab-custom1 {
     height: 130px;
     background: #000;
-    font-size: 22px;
+    font-size: 20px;
     border: 2px solid #320553; }
     #section2 .tab-custom1:not(:last-child) {
       border-right-width: 0; }
@@ -13183,7 +13184,7 @@ readers do not read off random characters that represent icons */
       height: 150px;
       margin-top: -10px;
       width: 390px;
-      box-shadow: 0px 10px 60px rgba(115, 0, 199, 0.5); }
+      box-shadow: 0px 8px 40px rgba(115, 0, 199, 0.5); }
 
 .bg {
   background: linear-gradient(-90deg, #a900d1 0%, #6300d6 100%);
@@ -13204,7 +13205,7 @@ readers do not read off random characters that represent icons */
     margin-bottom: 80px;
     height: auto; }
   #section3 h2 {
-    font-size: 40px;
+    font-size: 36px;
     color: white;
     font-style: normal;
     font-weight: bold; }
@@ -13220,7 +13221,7 @@ readers do not read off random characters that represent icons */
   padding-bottom: 220px;
   margin-top: -80px; }
   #section5 .text-white {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 40px;
     margin-top: 14px;
     font-weight: bold; }
@@ -13308,7 +13309,7 @@ readers do not read off random characters that represent icons */
       color: #6f6f6f;
       letter-spacing: 0.15px; }
     #section7 .top-speakers .speaker h3 {
-      font-size: 40px;
+      font-size: 36px;
       color: #fff;
       margin-top: 35px;
       margin-bottom: 17px; }
@@ -13381,7 +13382,7 @@ readers do not read off random characters that represent icons */
       width: 170px;
       bottom: 50px;
       left: 50px;
-      font-size: 40px;
+      font-size: 36px;
       color: #fff;
       line-height: 50px; }
     #section8 #carosel1 .carousel-control-prev {
@@ -13426,7 +13427,7 @@ readers do not read off random characters that represent icons */
   padding-bottom: 100px; }
   #section9 #timer {
     color: #fff;
-    font-size: 40px;
+    font-size: 36px;
     margin-top: 100px; }
   #section9 .dois {
     color: #7300C7; }
@@ -13447,7 +13448,7 @@ readers do not read off random characters that represent icons */
         height: 40px; }
     #section9 .single-ticket article h2 {
       color: #fff;
-      font-size: 40px;
+      font-size: 36px;
       margin-bottom: 35px;
       font-weight: bold; }
     #section9 .single-ticket article .price {
