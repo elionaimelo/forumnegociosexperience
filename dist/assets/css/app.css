@@ -13246,6 +13246,10 @@ readers do not read off random characters that represent icons */
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  #section6 .col-md-10 {
+    -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+    max-width: 79.8%; }
   #section6 .space-void {
     -ms-flex: 0.5;
         flex: 0.5; }
@@ -13449,11 +13453,11 @@ readers do not read off random characters that represent icons */
   #section9 .dois {
     color: #7300C7; }
   #section9 .countdown-aux span:first-child {
-    margin-right: 65px; }
+    margin-right: 33px; }
   #section9 .countdown-aux span:nth-child(2) {
-    margin-right: 30px; }
+    margin-right: 21px; }
   #section9 .countdown-aux span:nth-child(3) {
-    margin-right: 25px; }
+    margin-right: 35px; }
   #section9 .single-ticket {
     border-radius: 8px;
     padding-bottom: 45px;
@@ -13487,7 +13491,7 @@ readers do not read off random characters that represent icons */
       width: 80%; }
 
 #section10 {
-  margin-top: 40px;
+  margin-top: 44px;
   padding-bottom: 150px;
   background: linear-gradient(to bottom, black 0%, black 20%, #000000 20%, white 20%, white 100%); }
   #section10 h2 {
