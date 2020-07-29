@@ -1,3 +1,44 @@
+$(document).on("ready", function () {
+  $(".regular").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: "30px",
+          adaptiveHeight: true,
+        },
+      },
+    ],
+  });
+  $(".regular1").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: "30px",
+          adaptiveHeight: true,
+        },
+      },
+    ],
+  });
+});
+
+
+
 var estado = 0,
   vw = $(window).width();
 $(".nav-mb li a").click(function () {
@@ -181,6 +222,18 @@ $(window).scroll(function () {
 
 var width = $(window).width();
 if (width <= 720) {
+  
+  $('.2019').each(function() {
+    var text = $(this).text();
+    $(this).text(text.replace('Fórum Negócios 2019', 'FN 2019')); 
+ 
+  });
+  $('.2018').each(function() {
+    var text = $(this).text();
+    $(this).text(text.replace('Fórum Negócios 2018', 'FN 2018')); 
+ 
+  });
+
   if ($(this).scrollTop() == 0) {
     $("#newsletter").hide();
   }
@@ -196,41 +249,3 @@ if (width <= 720) {
 }
 
 
-$(document).on("ready", function () {
-  $(".regular").slick({
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    variableWidth: false,
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: {
-          centerMode: true,
-          centerPadding: "30px",
-          adaptiveHeight: true,
-        },
-      },
-    ],
-  });
-  $(".regular1").slick({
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    variableWidth: false,
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: {
-          centerMode: true,
-          centerPadding: "30px",
-          adaptiveHeight: true,
-        },
-      },
-    ],
-  });
-});
