@@ -12800,13 +12800,14 @@ readers do not read off random characters that represent icons */
   background: linear-gradient(90deg, #6300d6 0%, #a900d1 100%);
   border-color: #6300d6;
   color: white; }
-  .btn-2 i, .btn-6 i {
+  .btn-2 i, .btn-6 i, .btn-2 ion-icon, .btn-6 ion-icon {
+    transition: all 0.2s ease-in-out;
     color: white; }
   .btn-2:hover, .btn-6:hover {
     background: black !important;
     color: white;
     border-color: #9300FF; }
-    .btn-2:hover i, .btn-6:hover i {
+    .btn-2:hover ion-icon, .btn-6:hover ion-icon {
       padding-left: 9px;
       color: #9300FF; }
 
@@ -12819,19 +12820,27 @@ readers do not read off random characters that represent icons */
   font-size: 22px;
   transition: all 0.2s ease-in-out;
   width: 195px; }
-  .btn-3 i {
+  .btn-3 i, .btn-3 ion-icon {
     transition: all 0.2s ease-in-out;
     color: #7300C7;
     margin-left: 6px; }
   .btn-3:hover {
     background-color: #320553;
     color: white; }
-    .btn-3:hover i {
+    .btn-3:hover i, .btn-3:hover ion-icon {
       padding-left: 9px;
       color: #A76AED; }
 
 .btn-4 {
   color: #7300C7; }
+  .btn-4 ion-icon {
+    transition: all 0.2s ease-in-out; }
+  .btn-4:hover {
+    background: linear-gradient(90deg, #6300d6 0%, #a900d1 100%) !important;
+    color: white; }
+    .btn-4:hover ion-icon {
+      padding-left: 9px;
+      color: white; }
 
 .btn-vaga {
   color: white;
@@ -13081,7 +13090,7 @@ readers do not read off random characters that represent icons */
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     #footer .social a:not(:last-child) i {
-      margin-right: 60px; }
+      margin-right: 50px; }
   #footer .institutional {
     color: #6F6F6F;
     margin-top: 240px;
@@ -13212,7 +13221,7 @@ readers do not read off random characters that represent icons */
   #section3 .embed-responsive {
     padding-top: 0;
     margin-top: 0;
-    border-radius: 8px 0px 8px 8px;
+    border-radius: 10px 0px 10px 10px;
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5); }
 
 #section5 {
@@ -13296,7 +13305,8 @@ readers do not read off random characters that represent icons */
     height: auto; }
   #section7 .top-speakers h1 {
     color: #fff;
-    margin-bottom: 90px; }
+    margin-bottom: 90px;
+    font-size: 54px; }
   #section7 .top-speakers .speaker {
     max-width: 370px;
     margin-bottom: 110px; }
@@ -13419,7 +13429,8 @@ readers do not read off random characters that represent icons */
       background-color: rgba(255, 255, 255, 0.5);
       box-shadow: 0.5em 0 0 rgba(255, 255, 255, 0.5), -0.2em 0 0 rgba(255, 255, 255, 0.5);
       -webkit-box-decoration-break: clone;
-              box-decoration-break: clone; }
+              box-decoration-break: clone;
+      line-height: normal; }
 
 #section9 {
   background-color: #000000;

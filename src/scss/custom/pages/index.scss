@@ -142,7 +142,7 @@
   .embed-responsive {
     padding-top: 0;
     margin-top: 0;
-    border-radius: 8px 0px 8px 8px;
+    border-radius: 10px 0px 10px 10px;
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
   }
 }
@@ -276,6 +276,7 @@
     h1 {
       color: $branco;
       margin-bottom: 90px;
+      font-size: 54px;
     }
 
     .speaker {
@@ -450,6 +451,7 @@
         background-color: rgba($branco, 0.5);
         box-shadow: 0.5em 0 0 rgba($branco, 0.5), -0.2em 0 0 rgba($branco, 0.5);
         box-decoration-break: clone;
+        line-height: normal;
       }
     }
   }

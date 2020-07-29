@@ -27,9 +27,11 @@
   border-color: #6300d6;
   color: white;
 
-  i {
+  i, ion-icon {
+    transition: all 0.2s ease-in-out;
     color: white;
   }
+
 
   &:hover {
     background: black !important;
@@ -37,7 +39,7 @@
     border-color: #9300FF;
 
 
-    i {
+    ion-icon {
       padding-left: 9px;
       color: #9300FF;
     }
@@ -55,7 +57,7 @@
   transition: all 0.2s ease-in-out;
   width: 195px;
   
-  i {
+  i , ion-icon {
     transition: all 0.2s ease-in-out;
     color: $roxoEscuro;
     margin-left: 6px;
@@ -65,16 +67,30 @@
     background-color: $roxoHover;
     color: white;
 
-    i {
+    i , ion-icon {
       padding-left: 9px;
       color: $roxo;
     }
+    
   }
 }
 
 .btn-4 {
   @extend .btn-1;
   color: $roxoEscuro;
+
+  ion-icon {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, #6300d6 0%, #a900d1 100%) !important; 
+    color: white;
+    ion-icon {
+      padding-left: 9px;
+      color: white;
+    }
+  }
 }
 
 
