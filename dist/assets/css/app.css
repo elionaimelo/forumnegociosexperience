@@ -13258,43 +13258,48 @@ readers do not read off random characters that represent icons */
         flex: 2; }
   #section6 .nav-tabs {
     border-bottom: 0;
-    border-top: 1px solid #7300C7;
-    border-top-left-radius: 15px; }
+    border-top-left-radius: 15px;
+    position: relative; }
+    #section6 .nav-tabs:before {
+      position: absolute;
+      display: block;
+      content: '';
+      background: #7300C7;
+      height: 1px;
+      width: 66%;
+      margin-left: 523px; }
     #section6 .nav-tabs .nav-item .nav-link {
       padding-top: 45px;
       padding-bottom: 0;
       padding-left: 30px;
       padding-right: 100px;
       border-bottom: none;
-      color: #A76AED; }
+      color: rgba(166, 105, 236, 0.5);
+      position: relative; }
       #section6 .nav-tabs .nav-item .nav-link.active {
         background-color: transparent !important;
         color: white !important;
-        border-color: #7300C7; }
-    #section6 .nav-tabs .nav-item:first-child .nav-link {
+        border-color: #7300C7;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 0px;
+        border-right: 0; }
+      #section6 .nav-tabs .nav-item .nav-link:not(.active) {
+        border-left: 1px solid rgba(166, 105, 236, 0.5);
+        border-top: 1px solid #7300C7;
+        border-radius: 0px;
+        border-right: 0; }
+    #section6 .nav-tabs .nav-item:first-child .nav-link:before {
+      position: absolute;
+      display: block;
+      content: '';
+      background: rgba(166, 105, 236, 0.5);
+      width: 20px;
+      height: 1px;
+      top: -1px;
+      right: -20px; }
+    #section6 .nav-tabs .nav-item:first-child .nav-link:not(.active) {
       border-top-left-radius: 15px;
-      border-right: 0;
-      border-left: 1px solid #7300C7; }
-      #section6 .nav-tabs .nav-item:first-child .nav-link:focus {
-        border-color: #7300C7; }
-      #section6 .nav-tabs .nav-item:first-child .nav-link:hover {
-        border-top-color: transparent; }
-      #section6 .nav-tabs .nav-item:first-child .nav-link:active {
-        border-top-left-radius: 15px;
-        border-top-color: transparent;
-        border-right: 0;
-        border-top: 0 !important;
-        border-left: 1px solid #7300C7; }
-    #section6 .nav-tabs .nav-item:not(:first-child) .nav-link {
-      border-top: none;
-      border-right: none;
-      border-left-color: #a76aed;
-      border-top-left-radius: 0px; }
-      #section6 .nav-tabs .nav-item:not(:first-child) .nav-link:focus {
-        border-radius: 0 !important; }
-      #section6 .nav-tabs .nav-item:not(:first-child) .nav-link:active {
-        border-top-left-radius: 15px;
-        border-left: 1px solid #a76aed !important; }
+      border-top-color: rgba(166, 105, 236, 0.5); }
   #section6 .tab-content {
     padding-top: 140px; }
     #section6 .tab-content .content:not(:last-child) {

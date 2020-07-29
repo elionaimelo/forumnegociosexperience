@@ -189,8 +189,19 @@
 
   .nav-tabs {
     border-bottom: 0;
-    border-top: 1px solid $roxoEscuro;
+    // border-top: 1px solid $roxoEscuro;
     border-top-left-radius: 15px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      background: #7300C7;
+      height: 1px;
+      width: 66%;
+      margin-left: 523px;
+    }
 
     .nav-item {
       .nav-link {
@@ -199,54 +210,59 @@
         padding-left: 30px;
         padding-right: 100px;
         border-bottom: none;
-        color: #A76AED;
+        color: rgba(166, 105, 236,0.5);
+        position: relative;
 
         &.active {
           background-color: transparent !important;
           color: white !important;
           border-color: $roxoEscuro;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 0px;
+          border-right: 0;
+        }
+
+        &:not(.active){
+          border-left: 1px solid rgba(166, 105, 236,0.5);
+          border-top: 1px solid #7300C7;;
+          border-radius: 0px;
+          border-right: 0;
         }
       }
 
       &:first-child {
         .nav-link {
-          border-top-left-radius: 15px;
-          border-right: 0;
-          border-left: 1px solid #7300C7;
-
-          &:focus {
-            border-color: #7300C7;
+          &:before {
+            position: absolute;
+            display: block;
+            content: '';
+            background: rgba(166, 105, 236,0.5);
+            width: 20px;
+            height: 1px;
+            top: -1px;
+            right: -20px;
           }
 
-          &:hover {
-            border-top-color: transparent;
-          }
-
-          &:active {
+          &:not(.active){
             border-top-left-radius: 15px;
-            border-top-color: transparent;
-            border-right: 0;
-            border-top: 0 !important;
-            border-left: 1px solid #7300C7;
-          }
-        }
-      }
-
-      &:not(:first-child) {
-        .nav-link {
-          border-top: none;
-          border-right: none;
-          border-left-color: #a76aed;
-          border-top-left-radius: 0px;
-
-          &:focus {
-            border-radius: 0 !important;
+            border-top-color: rgba(166, 105, 236,0.5);
           }
 
-          &:active {
-            border-top-left-radius: 15px;
-            border-left: 1px solid #a76aed !important;
-          }
+          // &:focus {
+          //   border-color: #7300C7;
+          // }
+
+          // &:hover {
+          //   border-top-color: transparent;
+          // }
+
+          // &:active {
+          //   border-top-left-radius: 15px;
+          //   border-top-color: transparent;
+          //   border-right: 0;
+          //   border-top: 0 !important;
+          //   border-left: 1px solid #7300C7;
+          // }
         }
       }
     }
