@@ -1,4 +1,5 @@
 $(document).on("ready", function () {
+  
   $(".regular").slick({
     dots: true,
     infinite: true,
@@ -16,7 +17,7 @@ $(document).on("ready", function () {
         },
       },
     ],
-  });
+  });  
   $(".regular1").slick({
     dots: true,
     infinite: true,
@@ -35,7 +36,13 @@ $(document).on("ready", function () {
       },
     ],
   });
+
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+		$('.regular').slick('setPosition');
+		$('.regular1').slick('setPosition');
+	});
 });
+
 
 
 
