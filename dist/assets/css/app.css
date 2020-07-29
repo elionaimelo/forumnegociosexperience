@@ -7954,13 +7954,13 @@ a {
     text-decoration: none; }
 
 h1 {
-  font-size: 58px;
+  font-size: 50px;
   color: #fff;
   font-style: normal;
   font-weight: bold; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 30px; }
 
 p {
   font-style: normal;
@@ -8034,14 +8034,14 @@ main {
 
 .slick-dots {
   position: absolute;
-  bottom: -38px;
-  left: -122px;
-  display: block;
   width: 100%;
   padding: 0;
   margin: 0;
+  bottom: -38px;
+  left: 22px;
+  display: block;
   list-style: none;
-  text-align: center; }
+  text-align: left; }
 
 .slick-dots li {
   position: relative;
@@ -12845,10 +12845,10 @@ readers do not read off random characters that represent icons */
 .btn-vaga {
   color: white;
   border-radius: 8px;
-  box-shadow: 0px 10px 60px rgba(115, 0, 199, 0.5);
+  box-shadow: 0px 10px 50px rgba(115, 0, 199, 0.25);
   transition: all 0.2s ease-in-out;
   width: inherit;
-  border: 2px solid #7300C7; }
+  border: 2px solid #320553; }
   .btn-vaga svg {
     visibility: hidden;
     margin-left: -60px;
@@ -12861,7 +12861,8 @@ readers do not read off random characters that represent icons */
     color: white;
     border-radius: 8px;
     background: linear-gradient(-90deg, #a900d1 0%, #6300d6 100%);
-    padding-left: 20px; }
+    padding-left: 20px;
+    border: none; }
     .btn-vaga:hover svg {
       visibility: visible; }
     .btn-vaga:hover #Caminho_39 {
@@ -13151,7 +13152,7 @@ readers do not read off random characters that represent icons */
       #section1 .nav a:hover {
         background: linear-gradient(-90deg, rgba(169, 0, 209, 0.5) 0%, rgba(99, 0, 214, 0.5) 100%); }
       #section1 .nav a:not(:last-child) {
-        margin-right: 90px; }
+        margin-right: 60px; }
   #section1 .txt1 {
     color: #A76AED;
     font-size: 20px;
@@ -13190,10 +13191,10 @@ readers do not read off random characters that represent icons */
       border-bottom-left-radius: 8px; }
     #section2 .tab-custom1:last-child {
       border-radius: 8px;
+      border: none;
       height: 150px;
       margin-top: -10px;
-      width: 390px;
-      box-shadow: 0px 8px 40px rgba(115, 0, 199, 0.5); }
+      width: 390px; }
 
 .bg {
   background: linear-gradient(-90deg, #a900d1 0%, #6300d6 100%);
@@ -13214,7 +13215,7 @@ readers do not read off random characters that represent icons */
     margin-bottom: 80px;
     height: auto; }
   #section3 h2 {
-    font-size: 36px;
+    font-size: 30px;
     color: white;
     font-style: normal;
     font-weight: bold; }
@@ -13319,7 +13320,7 @@ readers do not read off random characters that represent icons */
       color: #6f6f6f;
       letter-spacing: 0.15px; }
     #section7 .top-speakers .speaker h3 {
-      font-size: 36px;
+      font-size: 30px;
       color: #fff;
       margin-top: 35px;
       margin-bottom: 17px; }
@@ -13350,8 +13351,13 @@ readers do not read off random characters that represent icons */
 #section8 {
   height: 1135px;
   position: relative; }
-  #section8 .count-top10 span {
-    color: white; }
+  #section8 .count-top10 {
+    margin-top: 80px; }
+    #section8 .count-top10 span {
+      color: white;
+      margin-right: 8px; }
+    #section8 .count-top10 img {
+      margin-right: 8px; }
   #section8 .mask-speaker10 {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -13392,7 +13398,7 @@ readers do not read off random characters that represent icons */
       width: 170px;
       bottom: 50px;
       left: 50px;
-      font-size: 36px;
+      font-size: 30px;
       color: #fff;
       line-height: 50px; }
     #section8 #carosel1 .carousel-control-prev {
@@ -13438,7 +13444,7 @@ readers do not read off random characters that represent icons */
   padding-bottom: 100px; }
   #section9 #timer {
     color: #fff;
-    font-size: 36px;
+    font-size: 30px;
     margin-top: 100px; }
   #section9 .dois {
     color: #7300C7; }
@@ -13459,7 +13465,7 @@ readers do not read off random characters that represent icons */
         height: 40px; }
     #section9 .single-ticket article h2 {
       color: #fff;
-      font-size: 36px;
+      font-size: 30px;
       margin-bottom: 35px;
       font-weight: bold; }
     #section9 .single-ticket article .price {
@@ -13481,9 +13487,9 @@ readers do not read off random characters that represent icons */
       width: 80%; }
 
 #section10 {
-  margin-top: -4px;
+  margin-top: 40px;
   padding-bottom: 150px;
-  background: linear-gradient(#000 20%, rgba(0, 0, 0, 0) 20%), linear-gradient(white 80%, white 80%); }
+  background: linear-gradient(to bottom, black 0%, black 20%, #000000 20%, white 20%, white 100%); }
   #section10 h2 {
     background: linear-gradient(-90deg, #a900d1 0%, #6300d6 100%);
     -webkit-background-clip: text;
@@ -13588,7 +13594,9 @@ readers do not read off random characters that represent icons */
 
 @media (max-width: 1440px) {
   #section3 {
-    background-size: 89.3%; } }
+    background-size: 89.3%; }
+  #section6 .col-custom {
+    width: 1140px; } }
 
 @media (max-width: 1280px) {
   .wrapper {

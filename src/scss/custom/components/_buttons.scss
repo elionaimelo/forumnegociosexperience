@@ -97,10 +97,10 @@
 .btn-vaga {
   color: white;
   border-radius: 8px;
-  box-shadow: 0px 10px 60px rgba(115, 0, 199, 0.5);
+  box-shadow: 0px 10px 50px rgba(115, 0, 199, 0.25);
   transition: all 0.2s ease-in-out;
   width: inherit;
-  border: 2px solid #7300C7;
+  border: 2px solid #320553;
 
   svg {
     visibility: hidden;
@@ -122,6 +122,7 @@
     border-radius: 8px;
     background: $gradiente;
     padding-left: 20px;
+    border:none;
 
     svg {
       visibility: visible;

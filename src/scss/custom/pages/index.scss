@@ -41,7 +41,7 @@
         background: linear-gradient(-90deg, rgba(169, 0, 209,0.5) 0%, rgba(99, 0, 214,0.5) 100%);
       }
       &:not(:last-child) {
-        margin-right: 90px;
+        margin-right: 60px;
       }
     }
   }
@@ -102,10 +102,10 @@
 
     &:last-child {
       border-radius: 8px;
+      border:none;
       height: 150px;
       margin-top: -10px;
       width: 390px;
-      box-shadow: 0px 8px 40px rgba(115, 0, 199, 0.5);
     }
   }
 }
@@ -343,8 +343,13 @@
   position: relative;
 
   .count-top10 {
+    margin-top: 80px;
     span {
       color: white;
+      margin-right: 8px;
+    }
+    img {
+      margin-right: 8px;
     }
   }
 
@@ -539,10 +544,9 @@
 //fim section9
 
 #section10 {
-  margin-top: -4px;
+  margin-top: 40px;
   padding-bottom: 150px;
-  background: linear-gradient(#000 20%, rgba(0, 0, 0, 0) 20%),
-    linear-gradient(white 80%, white 80%);
+  background: linear-gradient(to bottom, black 0%,black 20%,#000000 20%,white 20%,white 100%);
 
   h2 {
     background: $gradiente;
