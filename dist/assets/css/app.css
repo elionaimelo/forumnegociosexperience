@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Slider */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,700;1,400&display=swap");
 .slick-slider {
   position: relative;
   display: block;
@@ -7938,7 +7939,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Helvetica Neue", "Work Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
@@ -13973,9 +13974,15 @@ readers do not read off random characters that represent icons */
       color: #fff; }
       #section9 .btn-4 i {
         color: #fff; }
+  #section10 .wrap {
+    padding-top: 30px; }
   #section10 h2 {
-    margin-top: -95px;
+    margin-top: -25px;
     margin-bottom: 30px; }
+  #section10 .col-md-10 {
+    max-width: 100%; }
+  #section10 .carousel-control-next {
+    margin-left: 140px; }
   main {
     margin-bottom: 1086px;
     top: 460px; }
@@ -13990,7 +13997,11 @@ readers do not read off random characters that represent icons */
     margin-top: 50px;
     border-radius: 8px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
+  main {
+    margin-bottom: 760px; } }
+
+@media (max-width: 360px) {
   #section3 h2 {
     font-size: 26px;
     padding-right: 50px; }

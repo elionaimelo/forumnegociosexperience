@@ -113,9 +113,20 @@
   }
 
   #section10 {
+    .wrap {
+      padding-top: 30px;
+    }
     h2 {
-      margin-top: -95px;
+      margin-top: -25px;
       margin-bottom: 30px;
+    }
+
+    .col-md-10 {
+      max-width: 100%;
+    }
+
+    .carousel-control-next {
+      margin-left: 140px;
     }
   }
 
@@ -143,7 +154,13 @@
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
+  main {
+    margin-bottom: 760px;
+  }
+}
+
+@media (max-width: 360px) {
 
   #section3 {
     h2 {
