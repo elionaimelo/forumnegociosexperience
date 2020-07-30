@@ -13247,9 +13247,9 @@ readers do not read off random characters that represent icons */
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   #section6 .col-md-10 {
-    -ms-flex: 0 0 83.33333%;
-        flex: 0 0 83.33333%;
-    max-width: 79.8%; }
+    -ms-flex: auto;
+        flex: auto;
+    max-width: 79.2%; }
   #section6 .space-void {
     -ms-flex: 0.5;
         flex: 0.5; }
@@ -13604,12 +13604,16 @@ readers do not read off random characters that represent icons */
 @media (max-width: 1440px) {
   #section3 {
     background-size: 89.3%; }
-  #section6 .col-custom {
-    width: 1140px; } }
+  #section6 .col-md-10 {
+    max-width: 88.7%;
+    -ms-flex: auto;
+        flex: auto; }
+  #section10 .col-md-10 {
+    max-width: 88.7%;
+    -ms-flex: auto;
+        flex: auto; } }
 
 @media (max-width: 1280px) {
-  .wrapper {
-    overflow: hidden; }
   main {
     top: 740px;
     margin-bottom: 895px; }

@@ -1,19 +1,26 @@
+
 @media (max-width: 1440px) {
   #section3 {
     background-size: 89.3%;
   }
 
   #section6 {
-    .col-custom {
-      width: 1140px;
+    .col-md-10 {
+      max-width: 88.7%;
+      flex: auto;
+    }
+  }
+
+  #section10 {
+    .col-md-10 {
+      max-width: 88.7%;
+      flex: auto;
     }
   }
  }
 
 @media (max-width: 1280px) {
-  .wrapper {
-    overflow: hidden;
-  }
+
 
   main {
     top: 740px;
