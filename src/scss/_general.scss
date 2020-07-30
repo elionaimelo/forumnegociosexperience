@@ -191,7 +191,7 @@ main {
     content: '•';
     text-align: center;
 
-    opacity: .25;
+    opacity: 1;
     color: #320553;
     font-size: 50px;
 
@@ -200,7 +200,11 @@ main {
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
+    opacity: 1;
     color: #A76AED;
     font-size: 50px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 40px;
 }

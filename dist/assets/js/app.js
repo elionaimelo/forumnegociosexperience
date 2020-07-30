@@ -1,5 +1,4 @@
 $(document).on("ready", function () {
-  
   $(".regular").slick({
     dots: true,
     infinite: false,
@@ -17,7 +16,7 @@ $(document).on("ready", function () {
         },
       },
     ],
-  });  
+  });
   $(".regular1").slick({
     dots: true,
     infinite: false,
@@ -37,14 +36,11 @@ $(document).on("ready", function () {
     ],
   });
 
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-		$('.regular').slick('setPosition');
-		$('.regular1').slick('setPosition');
-	});
+  $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
+    $(".regular").slick("setPosition");
+    $(".regular1").slick("setPosition");
+  });
 });
-
-
-
 
 var estado = 0,
   vw = $(window).width();
@@ -167,17 +163,16 @@ var x = setInterval(function () {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  if(hours<10){
-    hours = '0'+hours;
+  if (hours < 10) {
+    hours = "0" + hours;
   }
-  if(minutes<10){
-    minutes = '0'+minutes;
+  if (minutes < 10) {
+    minutes = "0" + minutes;
   }
 
-  if(seconds<10){
-    seconds = '0'+seconds;
+  if (seconds < 10) {
+    seconds = "0" + seconds;
   }
- 
 
   // Output the result in an element with id="timer"
   document.getElementById("timer").innerHTML =
@@ -231,26 +226,22 @@ $.fn.isOnScreen = function () {
 $(window).scroll(function () {
   if ($("#section9").isOnScreen() == true) {
     $("#botao-fixo").hide();
-  }else if($("#footer").isOnScreen() == true) {
+  } else if ($("#footer").isOnScreen() == true) {
     $("#botao-fixo").hide();
-  }else {
+  } else {
     $("#botao-fixo").show();
   }
-
 });
 
 var width = $(window).width();
 if (width <= 720) {
-  
-  $('.2019').each(function() {
+  $(".2019").each(function () {
     var text = $(this).text();
-    $(this).text(text.replace('Fórum Negócios 2019', 'FN 2019')); 
- 
+    $(this).text(text.replace("Fórum Negócios 2019", "FN 2019"));
   });
-  $('.2018').each(function() {
+  $(".2018").each(function () {
     var text = $(this).text();
-    $(this).text(text.replace('Fórum Negócios 2018', 'FN 2018')); 
- 
+    $(this).text(text.replace("Fórum Negócios 2018", "FN 2018"));
   });
 
   if ($(this).scrollTop() == 0) {
@@ -267,109 +258,145 @@ if (width <= 720) {
   });
 }
 
+var el = document.querySelector(".odometer");
 
-var el = document.querySelector('.odometer');
-
-  od = new Odometer({
-    el: el,
-    format: '(ddd).dd',
-    duration: 4000,
-  });
-  
-  od.update(5)
-  
-  var el1 = document.querySelector('.odometer1');
-  
-  od1 = new Odometer({
-    el: el1,
-    format: '(ddd).dd',
-    duration: 4000,
-  });
-  
-  od1.update(30)
-  
-  var el2 = document.querySelector('.odometer2');
-  
-  od2 = new Odometer({
-    el: el2,
-    format: '(ddd).dd',
-    duration: 4000,
-  });
-  
-  od2.update(28)
-
-
-$(".2019").click(function(){
-  var el = document.querySelector('.odometer');
-
-  od = new Odometer({
-    el: el,
-    format: '(ddd).dd',
-    duration: 4000,
-  });
-  
-  od.update(5)
-  
-  var el1 = document.querySelector('.odometer1');
-  
-  od1 = new Odometer({
-    el: el1,
-    format: '(ddd).dd',
-    duration: 4000,
-  });
-  
-  od1.update(30)
-  
-  var el2 = document.querySelector('.odometer2');
-  
-  od2 = new Odometer({
-    el: el2,
-    format: '(ddd).dd',
-    duration: 4000,
-  });
-  
-  od2.update(28)
-
-  $('.odometer3').text('1');
-  $('.odometer4').text('1');
-  $('.odometer5').text('1');
-
-});
-$(".2018").click(function(){
-
-  $('.odometer').text('1');
-  $('.odometer1').text('1');
-  $('.odometer2').text('1');
-
-  var el = document.querySelector('.odometer3');
-
-  od = new Odometer({
-    el: el,
-    format: '(ddd).dd',
-    duration: 4000,
-  });
-  
-  od.update(3)
-  
-  var el1 = document.querySelector('.odometer4');
-  
-  od1 = new Odometer({
-    el: el1,
-    format: '(ddd).dd',
-    duration: 4000,
-  });
-  
-  od1.update(30)
-  
-  var el2 = document.querySelector('.odometer5');
-  
-  od2 = new Odometer({
-    el: el2,
-    format: '(ddd).dd',
-    duration: 4000,
-  });
-  
-  od2.update(19)
+od = new Odometer({
+  el: el,
+  format: "(ddd).dd",
+  duration: 4000,
 });
 
+od.update(5);
 
+var el = document.querySelector(".odometermb");
+
+od = new Odometer({
+  el: el,
+  format: "(ddd).dd",
+  duration: 4000,
+});
+
+od.update(5);
+
+var el1 = document.querySelector(".odometer1");
+
+od1 = new Odometer({
+  el: el1,
+  format: "(ddd).dd",
+  duration: 4000,
+});
+
+od1.update(30);
+
+$(".regular").on("afterChange", function (event, slick, currentSlide) {
+  if (currentSlide == 1) {
+    var el1 = document.querySelector(".odometer1mb");
+
+    od1 = new Odometer({
+      el: el1,
+      format: "(ddd).dd",
+      duration: 4000,
+    });
+
+    od1.update(30);
+  }
+});
+
+var el2 = document.querySelector(".odometer2");
+
+od2 = new Odometer({
+  el: el2,
+  format: "(ddd).dd",
+  duration: 4000,
+});
+
+od2.update(28);
+
+$(".regular").on("afterChange", function (event, slick, currentSlide) {
+  if (currentSlide == 2) {
+    var el2 = document.querySelector(".odometer2mb");
+
+    od2 = new Odometer({
+      el: el2,
+      format: "(ddd).dd",
+      duration: 4000,
+    });
+
+    od2.update(28);
+  }
+});
+
+$(".2019").click(function () {
+  var el = document.querySelector(".odometer");
+  od = new Odometer({
+    el: el,
+    format: "(ddd).dd",
+    duration: 4000,
+  });
+  od.update(5);
+
+  var el1 = document.querySelector(".odometer1");
+
+  od1 = new Odometer({
+    el: el1,
+    format: "(ddd).dd",
+    duration: 4000,
+  });
+
+  od1.update(30);
+
+  var el2 = document.querySelector(".odometer2");
+
+  od2 = new Odometer({
+    el: el2,
+    format: "(ddd).dd",
+    duration: 4000,
+  });
+
+  od2.update(28);
+
+  $(".odometer3").text("1");
+  $(".odometer4").text("1");
+  $(".odometer5").text("1");
+  $(".odometer3mb").text("1");
+  $(".odometer4mb").text("1");
+  $(".odometer5mb").text("1");
+});
+$(".2018").click(function () {
+  $(".odometer").text("1");
+  $(".odometer1").text("1");
+  $(".odometer2").text("1");
+  $(".odometermb").text("1");
+  $(".odometer1mb").text("1");
+  $(".odometer2mb").text("1");
+
+  var el = document.querySelector(".odometer3");
+
+  od = new Odometer({
+    el: el,
+    format: "(ddd).dd",
+    duration: 4000,
+  });
+
+  od.update(3);
+
+  var el1 = document.querySelector(".odometer4");
+
+  od1 = new Odometer({
+    el: el1,
+    format: "(ddd).dd",
+    duration: 4000,
+  });
+
+  od1.update(30);
+
+  var el2 = document.querySelector(".odometer5");
+
+  od2 = new Odometer({
+    el: el2,
+    format: "(ddd).dd",
+    duration: 4000,
+  });
+
+  od2.update(19);
+});
