@@ -268,16 +268,6 @@ od = new Odometer({
 
 od.update(5);
 
-var el = document.querySelector(".odometermb");
-
-od = new Odometer({
-  el: el,
-  format: "(ddd).dd",
-  duration: 4000,
-});
-
-od.update(5);
-
 var el1 = document.querySelector(".odometer1");
 
 od1 = new Odometer({
@@ -287,20 +277,6 @@ od1 = new Odometer({
 });
 
 od1.update(30);
-
-$(".regular").on("afterChange", function (event, slick, currentSlide) {
-  if (currentSlide == 1) {
-    var el1 = document.querySelector(".odometer1mb");
-
-    od1 = new Odometer({
-      el: el1,
-      format: "(ddd).dd",
-      duration: 4000,
-    });
-
-    od1.update(30);
-  }
-});
 
 var el2 = document.querySelector(".odometer2");
 
@@ -312,27 +288,15 @@ od2 = new Odometer({
 
 od2.update(28);
 
-$(".regular").on("afterChange", function (event, slick, currentSlide) {
-  if (currentSlide == 2) {
-    var el2 = document.querySelector(".odometer2mb");
-
-    od2 = new Odometer({
-      el: el2,
-      format: "(ddd).dd",
-      duration: 4000,
-    });
-
-    od2.update(28);
-  }
-});
-
 $(".2019").click(function () {
   var el = document.querySelector(".odometer");
+
   od = new Odometer({
     el: el,
     format: "(ddd).dd",
     duration: 4000,
   });
+
   od.update(5);
 
   var el1 = document.querySelector(".odometer1");
@@ -358,17 +322,11 @@ $(".2019").click(function () {
   $(".odometer3").text("1");
   $(".odometer4").text("1");
   $(".odometer5").text("1");
-  $(".odometer3mb").text("1");
-  $(".odometer4mb").text("1");
-  $(".odometer5mb").text("1");
 });
 $(".2018").click(function () {
   $(".odometer").text("1");
   $(".odometer1").text("1");
   $(".odometer2").text("1");
-  $(".odometermb").text("1");
-  $(".odometer1mb").text("1");
-  $(".odometer2mb").text("1");
 
   var el = document.querySelector(".odometer3");
 

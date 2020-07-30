@@ -13271,7 +13271,7 @@ readers do not read off random characters that represent icons */
       content: '';
       background: #7300C7;
       height: 1px;
-      width: 66%;
+      width: 100%;
       margin-left: 523px; }
     #section6 .nav-tabs .nav-item .nav-link {
       padding-top: 45px;
