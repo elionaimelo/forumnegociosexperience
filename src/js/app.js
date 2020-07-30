@@ -123,10 +123,11 @@ $("#hamburger").click(function () {
   }
 });
 
-$("#carosel1").carousel({
-  interval: 10000000000 * 10,
-  wrap: false,
+$("#carousel10").carousel({
+  interval: 100000000000000
 });
+
+
 
 var prev = document.getElementById("bt-prev");
 var next = document.getElementById("bt-next");

@@ -1,4 +1,3 @@
-
 .visible > div {
   background-color: #778beb;
 }
@@ -19,7 +18,6 @@
     width: 24px;
     height: 40px;
     transition: all 0.22s ease-in-out;
-    
 
     &:hover {
       background: url(../images/seta.png) no-repeat;
@@ -38,7 +36,11 @@
       border-radius: 8px;
 
       &:hover {
-        background: linear-gradient(-90deg, rgba(169, 0, 209,0.5) 0%, rgba(99, 0, 214,0.5) 100%);
+        background: linear-gradient(
+          -90deg,
+          rgba(169, 0, 209, 0.5) 0%,
+          rgba(99, 0, 214, 0.5) 100%
+        );
       }
       &:not(:last-child) {
         margin-right: 60px;
@@ -102,7 +104,7 @@
 
     &:last-child {
       border-radius: 8px;
-      border:none;
+      border: none;
       height: 150px;
       margin-top: -10px;
       width: 390px;
@@ -196,8 +198,8 @@
     &:before {
       position: absolute;
       display: block;
-      content: '';
-      background: #7300C7;
+      content: "";
+      background: #7300c7;
       height: 1px;
       width: 100%;
       margin-left: 523px;
@@ -210,7 +212,7 @@
         padding-left: 30px;
         padding-right: 100px;
         border-bottom: none;
-        color: rgba(166, 105, 236,0.5);
+        color: rgba(166, 105, 236, 0.5);
         position: relative;
 
         &.active {
@@ -222,9 +224,9 @@
           border-right: 0;
         }
 
-        &:not(.active){
-          border-left: 1px solid rgba(166, 105, 236,0.5);
-          border-top: 1px solid #7300C7;;
+        &:not(.active) {
+          border-left: 1px solid rgba(166, 105, 236, 0.5);
+          border-top: 1px solid #7300c7;
           border-radius: 0px;
           border-right: 0;
         }
@@ -235,17 +237,17 @@
           &:before {
             position: absolute;
             display: block;
-            content: '';
-            background: rgba(166, 105, 236,0.5);
+            content: "";
+            background: rgba(166, 105, 236, 0.5);
             width: 20px;
             height: 1px;
             top: -1px;
             right: -20px;
           }
 
-          &:not(.active){
+          &:not(.active) {
             border-top-left-radius: 15px;
-            border-top-color: rgba(166, 105, 236,0.5);
+            border-top-color: rgba(166, 105, 236, 0.5);
           }
         }
       }
@@ -257,7 +259,7 @@
     padding-top: 140px;
 
     .content {
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-right: 106px;
       }
     }
@@ -344,8 +346,10 @@
 // fim section7
 
 #section8 {
-  height: 1135px;
-  position: relative;
+  height: 445px;
+  width: 100%;
+  background: url(../images/bg-palestrantes.png) no-repeat top left;
+  background-size: 72% 100%;
 
   .count-top10 {
     margin-top: 80px;
@@ -364,108 +368,187 @@
     overflow: hidden;
   }
 
-  .bg1 {
-    background: url(../images/bg-palestrantes.png) no-repeat top left;
-    background-size: 68% 100%;
-    height: 470px;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-  }
-  .bg2 {
-    background: url(../images/bgSection8.jpg) bottom no-repeat;
-    height: 900px;
-    min-height: 570px;
-    width: 100%;
-    top: 235px;
-    position: absolute;
-    z-index: 1;
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 80%;
   }
 
-  #carosel1 {
-    position: relative;
-    z-index: 10;
-
-    
-
-    .carousel-control.left, .carousel-control.right {
-      background-image:none !important;
-      filter:none !important;
-   }
-
-    .carosel-body {
-      margin-top: 230px;
-    }
-
-    .carousel-control-next,.carousel-control-prev {
-      position: absolute;
-      z-index: 100000000;
-      display: initial;
-      width: auto;
-      opacity: 1;
-      text-align: left;
-      top: 349px;
-    }
-    .name {
-      width: 170px;
-      bottom: 50px;
-      left: 50px;
-      font-size: $fonte-media;
-      color: $branco;
-      line-height: 50px;
-    }
-
-    .carousel-control-prev{
-      right: 60px;
-      left: auto;
-      height:0;
-    }
-    .carousel-control-next{
-      right: -80px;
-      left: auto;
-      height:0;
-    }
-
-    .carousel-indicators {
-      justify-content: start;
-      margin-right: 0;
-      margin-left: 0;
-      bottom: 80px;
-
-      li {
-        border-radius: 30px;
-        width: 9px;
-        height: 9px;
-        border: none;
-        margin-right: 20px;
-      }
-
-      .active {
-        background-color: black;
-      }
-    }
+  .carousel-control-prev {
+    right: 60px;
+    left: auto;
+    height: 0;
   }
-
-  .carosel-body {
-    p {
-      padding-top: 350px;
-      margin-bottom: 93px;
-    }
-
-    h1 {
-      display: inline;
-      color: black;
-      line-height: initial;
-      padding: 0.2em 0em;
-      span {
-        background-color: rgba($branco, 0.5);
-        box-shadow: 0.5em 0 0 rgba($branco, 0.5), -0.2em 0 0 rgba($branco, 0.5);
-        box-decoration-break: clone;
-        line-height: normal;
-      }
-    }
+  .carousel-control-next {
+    right: -80px;
+    left: auto;
+    height: 0;
   }
 }
+
+#section8b {
+  background: url(../images/bgSection8.jpg) no-repeat;
+  height: 900px;
+  margin-top: 285px;
+  padding-top: 345px;
+
+  p {
+    margin-bottom: 93px;
+  }
+
+  h1 {
+    display: inline;
+    color: black;
+    line-height: initial;
+    padding: 0.2em 0em;
+    span {
+      background-color: rgba($branco, 0.5);
+      box-shadow: 0.5em 0 0 rgba($branco, 0.5), -0.2em 0 0 rgba($branco, 0.5);
+      box-decoration-break: clone;
+      line-height: normal;
+    }
+  }
+
+  .carousel-indicators {
+          justify-content: start;
+          margin-right: 0;
+          margin-left: 0;
+          bottom: 80px;
+    
+          li {
+            border-radius: 30px;
+            width: 9px;
+            height: 9px;
+            border: none;
+            margin-right: 20px;
+          }
+    
+          .active {
+            background-color: black;
+          }
+        }
+}
+
+// #section8 {
+//   height: 1135px;
+//   position: relative;
+
+//   .count-top10 {
+//     margin-top: 80px;
+//     span {
+//       color: white;
+//       margin-right: 8px;
+//     }
+//     img {
+//       margin-right: 8px;
+//     }
+//   }
+
+//   .mask-speaker10 {
+//     border-top-right-radius: 8px;
+//     border-bottom-right-radius: 8px;
+//     overflow: hidden;
+//   }
+
+//   .bg1 {
+//     background: url(../images/bg-palestrantes.png) no-repeat top left;
+//     background-size: 68% 100%;
+//     height: 470px;
+//     width: 100%;
+//     position: absolute;
+//     z-index: 2;
+//   }
+//   .bg2 {
+//     background: url(../images/bgSection8.jpg) bottom no-repeat;
+//     height: 900px;
+//     min-height: 570px;
+//     width: 100%;
+//     top: 235px;
+//     position: absolute;
+//     z-index: 1;
+//   }
+
+//   #carosel1 {
+//     position: relative;
+//     z-index: 10;
+
+//     .carousel-control.left, .carousel-control.right {
+//       background-image:none !important;
+//       filter:none !important;
+//    }
+
+//     .carosel-body {
+//       margin-top: 230px;
+//     }
+
+//     .carousel-control-next,.carousel-control-prev {
+//       position: absolute;
+//       z-index: 100000000;
+//       display: initial;
+//       width: auto;
+//       opacity: 1;
+//       text-align: left;
+//       top: 349px;
+//     }
+//     .name {
+//       width: 170px;
+//       bottom: 50px;
+//       left: 50px;
+//       font-size: $fonte-media;
+//       color: $branco;
+//       line-height: 50px;
+//     }
+
+//     .carousel-control-prev{
+//       right: 60px;
+//       left: auto;
+//       height:0;
+//     }
+//     .carousel-control-next{
+//       right: -80px;
+//       left: auto;
+//       height:0;
+//     }
+
+//     .carousel-indicators {
+//       justify-content: start;
+//       margin-right: 0;
+//       margin-left: 0;
+//       bottom: 80px;
+
+//       li {
+//         border-radius: 30px;
+//         width: 9px;
+//         height: 9px;
+//         border: none;
+//         margin-right: 20px;
+//       }
+
+//       .active {
+//         background-color: black;
+//       }
+//     }
+//   }
+
+//   .carosel-body {
+//     p {
+//       padding-top: 350px;
+//       margin-bottom: 93px;
+//     }
+
+//     h1 {
+//       display: inline;
+//       color: black;
+//       line-height: initial;
+//       padding: 0.2em 0em;
+//       span {
+//         background-color: rgba($branco, 0.5);
+//         box-shadow: 0.5em 0 0 rgba($branco, 0.5), -0.2em 0 0 rgba($branco, 0.5);
+//         box-decoration-break: clone;
+//         line-height: normal;
+//       }
+//     }
+//   }
+// }
 
 //fim section8
 
@@ -522,7 +605,13 @@
       .price {
         font-size: 28px;
         font-weight: bold;
-        background: linear-gradient(90deg, #6300d6 0%,#6300d6 50%,#a900d1 60%,#a900d1   100%);
+        background: linear-gradient(
+          90deg,
+          #6300d6 0%,
+          #6300d6 50%,
+          #a900d1 60%,
+          #a900d1 100%
+        );
         background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -551,7 +640,14 @@
 #section10 {
   margin-top: 44px;
   padding-bottom: 150px;
-  background: linear-gradient(to bottom, black 0%,black 20%,#000000 20%,white 20%,white 100%);
+  background: linear-gradient(
+    to bottom,
+    black 0%,
+    black 20%,
+    #000000 20%,
+    white 20%,
+    white 100%
+  );
 
   h2 {
     background: $gradiente;
@@ -677,8 +773,7 @@
 
 //fim section12
 
-.modal{
-
+.modal {
   .form-check-label {
     font-weight: 100;
   }
@@ -696,18 +791,15 @@
   }
 
   .modal-footer {
-    border:none;
+    border: none;
     footer {
       width: 100%;
     }
   }
 }
 
-
-
-
-
-.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -715,10 +807,12 @@
   *vertical-align: auto;
   position: relative;
 }
-.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
   *display: inline;
 }
-.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+.odometer.odometer-auto-theme .odometer-digit,
+.odometer.odometer-theme-default .odometer-digit {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -726,10 +820,12 @@
   *vertical-align: auto;
   position: relative;
 }
-.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+.odometer.odometer-auto-theme .odometer-digit,
+.odometer.odometer-theme-default .odometer-digit {
   *display: inline;
 }
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
+.odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -737,10 +833,12 @@
   *vertical-align: auto;
   visibility: hidden;
 }
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
+.odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
   *display: inline;
 }
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
+.odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
   text-align: left;
   display: block;
   position: absolute;
@@ -750,42 +848,59 @@
   bottom: 0;
   overflow: hidden;
 }
-.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon,
+.odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
   display: block;
 }
-.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner,
+.odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
   display: block;
   -webkit-backface-visibility: hidden;
 }
-.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value {
+.odometer.odometer-auto-theme .odometer-digit .odometer-value,
+.odometer.odometer-theme-default .odometer-digit .odometer-value {
   display: block;
   -webkit-transform: translateZ(0);
 }
-.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value {
+.odometer.odometer-auto-theme
+  .odometer-digit
+  .odometer-value.odometer-last-value,
+.odometer.odometer-theme-default
+  .odometer-digit
+  .odometer-value.odometer-last-value {
   position: absolute;
 }
-.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
   -webkit-transition: -webkit-transform 2s;
   -moz-transition: -moz-transform 2s;
   -ms-transition: -ms-transform 2s;
   -o-transition: -o-transform 2s;
   transition: transform 2s;
 }
-.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating
+  .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-up.odometer-animating
+  .odometer-ribbon-inner {
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-down
+  .odometer-ribbon-inner {
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating
+  .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-down.odometer-animating
+  .odometer-ribbon-inner {
   -webkit-transition: -webkit-transform 2s;
   -moz-transition: -moz-transform 2s;
   -ms-transition: -ms-transform 2s;
@@ -798,10 +913,12 @@
   transform: translateY(0);
 }
 
-.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
   font-family: "Helvetica Neue", sans-serif;
   line-height: 1.1em;
 }
-.odometer.odometer-auto-theme .odometer-value, .odometer.odometer-theme-default .odometer-value {
+.odometer.odometer-auto-theme .odometer-value,
+.odometer.odometer-theme-default .odometer-value {
   text-align: center;
 }
