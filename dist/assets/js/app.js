@@ -268,3 +268,108 @@ if (width <= 720) {
 }
 
 
+var el = document.querySelector('.odometer');
+
+  od = new Odometer({
+    el: el,
+    format: '(ddd).dd',
+    duration: 4000,
+  });
+  
+  od.update(5)
+  
+  var el1 = document.querySelector('.odometer1');
+  
+  od1 = new Odometer({
+    el: el1,
+    format: '(ddd).dd',
+    duration: 4000,
+  });
+  
+  od1.update(30)
+  
+  var el2 = document.querySelector('.odometer2');
+  
+  od2 = new Odometer({
+    el: el2,
+    format: '(ddd).dd',
+    duration: 4000,
+  });
+  
+  od2.update(28)
+
+
+$(".2019").click(function(){
+  var el = document.querySelector('.odometer');
+
+  od = new Odometer({
+    el: el,
+    format: '(ddd).dd',
+    duration: 4000,
+  });
+  
+  od.update(5)
+  
+  var el1 = document.querySelector('.odometer1');
+  
+  od1 = new Odometer({
+    el: el1,
+    format: '(ddd).dd',
+    duration: 4000,
+  });
+  
+  od1.update(30)
+  
+  var el2 = document.querySelector('.odometer2');
+  
+  od2 = new Odometer({
+    el: el2,
+    format: '(ddd).dd',
+    duration: 4000,
+  });
+  
+  od2.update(28)
+
+  $('.odometer3').text('1');
+  $('.odometer4').text('1');
+  $('.odometer5').text('1');
+
+});
+$(".2018").click(function(){
+
+  $('.odometer').text('1');
+  $('.odometer1').text('1');
+  $('.odometer2').text('1');
+
+  var el = document.querySelector('.odometer3');
+
+  od = new Odometer({
+    el: el,
+    format: '(ddd).dd',
+    duration: 4000,
+  });
+  
+  od.update(3)
+  
+  var el1 = document.querySelector('.odometer4');
+  
+  od1 = new Odometer({
+    el: el1,
+    format: '(ddd).dd',
+    duration: 4000,
+  });
+  
+  od1.update(30)
+  
+  var el2 = document.querySelector('.odometer5');
+  
+  od2 = new Odometer({
+    el: el2,
+    format: '(ddd).dd',
+    duration: 4000,
+  });
+  
+  od2.update(19)
+});
+
+
