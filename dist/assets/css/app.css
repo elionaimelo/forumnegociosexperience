@@ -13925,8 +13925,10 @@ readers do not read off random characters that represent icons */
     border-radius: 10px;
     width: 92%;
     left: 50%;
-    margin-left: -173px;
+    margin-left: -166px;
     background-image: url(../images/bgSection8mb.png); }
+    #section8 .bg1 .count-top10 {
+      margin-top: 30px; }
   #section8 .bg2 {
     top: 518px;
     height: 280px;
@@ -13947,7 +13949,7 @@ readers do not read off random characters that represent icons */
   #section8 #carosel1 .name {
     left: 50%;
     bottom: 10px;
-    margin-left: -82px; }
+    margin-left: -55px; }
   #section8 #carosel1 .carousel-control-prev,
   #section8 #carosel1 .carousel-control-next {
     top: 500px; }
@@ -13993,4 +13995,9 @@ readers do not read off random characters that represent icons */
     font-size: 26px;
     padding-right: 50px; }
   main {
-    margin-bottom: 806px; } }
+    margin-bottom: 806px; }
+  #section8 .bg1 {
+    width: 90.7%;
+    margin-left: -145px; }
+    #section8 .bg1 .count-top10 {
+      margin-top: 30px; } }

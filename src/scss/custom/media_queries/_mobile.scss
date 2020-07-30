@@ -29,14 +29,19 @@
       border-radius: 10px;
       width: 92%;
       left: 50%;
-      margin-left: -173px;
+      margin-left: -166px;
       background-image: url(../images/bgSection8mb.png);
+
+      .count-top10 {
+        margin-top: 30px;
+      }
     }
 
     .bg2 {
       top: 518px;
       height: 280px;
       background-size: cover;
+     
     }
 
     .mask-speaker10 {
@@ -68,7 +73,7 @@
       .name {
         left: 50%;
         bottom: 10px;
-        margin-left: -82px;
+        margin-left: -55px;
       }
       .carousel-control-prev, 
       .carousel-control-next {
@@ -148,5 +153,16 @@
   }
   main {
     margin-bottom: 806px;
+  }
+
+  #section8 {
+    .bg1 {
+      width: 90.7%;
+      margin-left: -145px;
+
+      .count-top10 {
+        margin-top: 30px;
+      }
+    }
   }
 }
