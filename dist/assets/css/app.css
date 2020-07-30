@@ -13245,11 +13245,12 @@ readers do not read off random characters that represent icons */
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  overflow: hidden; }
   #section6 .col-md-10 {
     -ms-flex: auto;
         flex: auto;
-    max-width: 79.2%; }
+    max-width: 79.8%; }
   #section6 .space-void {
     -ms-flex: 0.5;
         flex: 0.5; }
@@ -13508,6 +13509,10 @@ readers do not read off random characters that represent icons */
   #section10 p {
     font-size: 20px;
     line-height: 36px; }
+  #section10 .col-md-10 {
+    -ms-flex: auto;
+        flex: auto;
+    max-width: 79.8%; }
   #section10 .col-10 {
     padding-left: 90px; }
   #section10 .carousel-item {

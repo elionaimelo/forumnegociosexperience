@@ -173,10 +173,11 @@
 #section6 {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 
   .col-md-10 {
     flex: auto;
-    max-width: 79.2%;
+    max-width: 79.8%;
   }
 
   .space-void {
@@ -189,7 +190,6 @@
 
   .nav-tabs {
     border-bottom: 0;
-    // border-top: 1px solid $roxoEscuro;
     border-top-left-radius: 15px;
     position: relative;
 
@@ -247,22 +247,6 @@
             border-top-left-radius: 15px;
             border-top-color: rgba(166, 105, 236,0.5);
           }
-
-          // &:focus {
-          //   border-color: #7300C7;
-          // }
-
-          // &:hover {
-          //   border-top-color: transparent;
-          // }
-
-          // &:active {
-          //   border-top-left-radius: 15px;
-          //   border-top-color: transparent;
-          //   border-right: 0;
-          //   border-top: 0 !important;
-          //   border-left: 1px solid #7300C7;
-          // }
         }
       }
     }
@@ -579,6 +563,11 @@
   p {
     font-size: $fonte-pequena;
     line-height: 36px;
+  }
+
+  .col-md-10 {
+    flex: auto;
+    max-width: 79.8%;
   }
 
   .col-10 {
