@@ -13619,7 +13619,7 @@ readers do not read off random characters that represent icons */
 @media (max-width: 992px) {
   .wrapper {
     overflow: hidden; }
-  h1, h2, h3 {
+  h1, h3 {
     font-size: 30px !important;
     line-height: 40px; }
   main {
@@ -13664,7 +13664,7 @@ readers do not read off random characters that represent icons */
       line-height: 40px; }
     #section3 .box-txt {
       margin-bottom: 30px;
-      padding-top: 60px; }
+      padding-top: 30px; }
     #section3 .embed-responsive {
       margin-top: 0px;
       width: 100%; }
@@ -13820,6 +13820,12 @@ readers do not read off random characters that represent icons */
   .btn-2, .btn-6 {
     border-radius: 0;
     border: none; }
+  #section6 .col-md-10 {
+    max-width: 100%; }
+  #section6 .nav-tabs:before {
+    margin-left: 102px; }
+  #section6 .overflow-hidden {
+    padding-bottom: 40px; }
   #section8 .bg1 {
     background-size: cover;
     padding-top: 40px;
@@ -13888,3 +13894,10 @@ readers do not read off random characters that represent icons */
   .btn-6 {
     margin-top: 50px;
     border-radius: 8px; } }
+
+@media (max-width: 320px) {
+  #section3 h2 {
+    font-size: 26px;
+    padding-right: 50px; }
+  main {
+    margin-bottom: 806px; } }

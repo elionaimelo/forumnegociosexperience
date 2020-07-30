@@ -10,6 +10,18 @@
     border: none;
   }
 
+  #section6 {
+    .col-md-10 {
+      max-width: 100%;
+    }
+   .nav-tabs:before {
+      margin-left: 102px;
+    }
+    .overflow-hidden {
+      padding-bottom: 40px;
+    }
+  }
+
   #section8 {
     .bg1 {
       background-size: cover;
@@ -124,4 +136,17 @@
   }
   
 
+}
+
+@media (max-width: 320px) {
+
+  #section3 {
+    h2 {
+      font-size: 26px;
+      padding-right: 50px;
+    }
+  }
+  main {
+    margin-bottom: 806px;
+  }
 }
