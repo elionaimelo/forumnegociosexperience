@@ -37,3 +37,23 @@
    background-size: 94.2%;
  }
 }
+
+@media (max-width: 1024px) {
+
+  #section6 {
+   .col-lg-10 {
+    max-width: 95.7%;
+   }
+  }
+
+  #section8 {
+    height: 369px;
+
+    .carousel-control-prev {
+      right: auto;
+    }
+    .carousel-control-next {
+      right: 0px;
+    }
+  }
+}

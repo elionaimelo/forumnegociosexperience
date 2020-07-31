@@ -13708,6 +13708,16 @@ readers do not read off random characters that represent icons */
   #section3 {
     background-size: 94.2%; } }
 
+@media (max-width: 1024px) {
+  #section6 .col-lg-10 {
+    max-width: 95.7%; }
+  #section8 {
+    height: 369px; }
+    #section8 .carousel-control-prev {
+      right: auto; }
+    #section8 .carousel-control-next {
+      right: 0px; } }
+
 @media (max-width: 992px) {
   .wrapper {
     overflow: hidden; }
