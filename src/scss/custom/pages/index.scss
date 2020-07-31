@@ -177,7 +177,7 @@
   flex-wrap: wrap;
   overflow: hidden;
 
-  .col-md-10 {
+  .col-lg-10 {
     flex: auto;
     max-width: 79.1%;
   }
@@ -346,7 +346,7 @@
 // fim section7
 
 #section8 {
-  height: 445px;
+  height: 470px;
   width: 100%;
   background: url(../images/bg-palestrantes.png) no-repeat top left;
   background-size: 72% 100%;
@@ -427,129 +427,6 @@
           }
         }
 }
-
-// #section8 {
-//   height: 1135px;
-//   position: relative;
-
-//   .count-top10 {
-//     margin-top: 80px;
-//     span {
-//       color: white;
-//       margin-right: 8px;
-//     }
-//     img {
-//       margin-right: 8px;
-//     }
-//   }
-
-//   .mask-speaker10 {
-//     border-top-right-radius: 8px;
-//     border-bottom-right-radius: 8px;
-//     overflow: hidden;
-//   }
-
-//   .bg1 {
-//     background: url(../images/bg-palestrantes.png) no-repeat top left;
-//     background-size: 68% 100%;
-//     height: 470px;
-//     width: 100%;
-//     position: absolute;
-//     z-index: 2;
-//   }
-//   .bg2 {
-//     background: url(../images/bgSection8.jpg) bottom no-repeat;
-//     height: 900px;
-//     min-height: 570px;
-//     width: 100%;
-//     top: 235px;
-//     position: absolute;
-//     z-index: 1;
-//   }
-
-//   #carosel1 {
-//     position: relative;
-//     z-index: 10;
-
-//     .carousel-control.left, .carousel-control.right {
-//       background-image:none !important;
-//       filter:none !important;
-//    }
-
-//     .carosel-body {
-//       margin-top: 230px;
-//     }
-
-//     .carousel-control-next,.carousel-control-prev {
-//       position: absolute;
-//       z-index: 100000000;
-//       display: initial;
-//       width: auto;
-//       opacity: 1;
-//       text-align: left;
-//       top: 349px;
-//     }
-//     .name {
-//       width: 170px;
-//       bottom: 50px;
-//       left: 50px;
-//       font-size: $fonte-media;
-//       color: $branco;
-//       line-height: 50px;
-//     }
-
-//     .carousel-control-prev{
-//       right: 60px;
-//       left: auto;
-//       height:0;
-//     }
-//     .carousel-control-next{
-//       right: -80px;
-//       left: auto;
-//       height:0;
-//     }
-
-//     .carousel-indicators {
-//       justify-content: start;
-//       margin-right: 0;
-//       margin-left: 0;
-//       bottom: 80px;
-
-//       li {
-//         border-radius: 30px;
-//         width: 9px;
-//         height: 9px;
-//         border: none;
-//         margin-right: 20px;
-//       }
-
-//       .active {
-//         background-color: black;
-//       }
-//     }
-//   }
-
-//   .carosel-body {
-//     p {
-//       padding-top: 350px;
-//       margin-bottom: 93px;
-//     }
-
-//     h1 {
-//       display: inline;
-//       color: black;
-//       line-height: initial;
-//       padding: 0.2em 0em;
-//       span {
-//         background-color: rgba($branco, 0.5);
-//         box-shadow: 0.5em 0 0 rgba($branco, 0.5), -0.2em 0 0 rgba($branco, 0.5);
-//         box-decoration-break: clone;
-//         line-height: normal;
-//       }
-//     }
-//   }
-// }
-
 //fim section8
 
 #section9 {
@@ -670,6 +547,10 @@
     padding-left: 90px;
   }
 
+  #carousel2 {
+    margin-bottom: 150px;
+  }
+
   .carousel-item {
     border-radius: 8px;
     height: 100%;
@@ -680,21 +561,33 @@
 
   .carousel-control-next,
   .carousel-control-prev {
-    position: relative;
-    display: initial;
-    width: auto;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
     opacity: 1;
     text-align: left;
+    bottom: 0;
+    width: 23px;
+    bottom: 26px;
+    left: -95px;
   }
 
-  .carousel-control-prev {
-    margin-left: -100px;
-    top: -110px;
-  }
   .carousel-control-next {
-    top: -120px;
-    margin-left: 110px;
+    width: 100px;
+    left: 52px;
+    bottom: 0;
   }
+  
+
+  // .carousel-control-prev {
+  //   // margin-left: -100px;
+  //   top: -110px;
+  // }
+  // .carousel-control-next {
+  //   top: -120px;
+  //   // margin-left: 110px;
+  //   right: 0;
+  // }
 }
 //fim section10
 

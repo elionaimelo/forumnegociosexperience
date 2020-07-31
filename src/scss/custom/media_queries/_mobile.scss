@@ -17,35 +17,62 @@
    .nav-tabs:before {
       margin-left: 102px;
     }
+    .tab-content {
+      margin-left: 0;
+    }
     .overflow-hidden {
       padding-bottom: 40px;
     }
   }
 
-  #section8 {
-    .bg1 {
-      background-size: cover;
-      padding-top: 40px;
-      border-radius: 10px;
-      width: 92%;
-      left: 50%;
-      margin-left: -166px;
-      background-image: url(../images/bgSection8mb.png);
+  #section7 {
+    background-size: 95.7% 300px;
 
-      .count-top10 {
-        margin-top: 30px;
-      }
+    .box-txt {
+      padding-top: 45px;
+    }
+  }
+
+  #section8 {
+    background-position: center;
+    background-size: 90.7% 100%;
+
+    h1 {
+      margin: 35px 10px 20px 30px
     }
 
-    .bg2 {
-      top: 518px;
-      height: 280px;
-      background-size: cover;
+    .count-top10 {
+      margin-top: 00px;
+      margin-left: 30px;
+    }
+
+    // .bg1 {
+    //   background-size: cover;
+    //   padding-top: 40px;
+    //   border-radius: 10px;
+    //   width: 92%;
+    //   left: 50%;
+    //   margin-left: -166px;
+    //   background-image: url(../images/bgSection8mb.png);
+
+    //   .count-top10 {
+    //     margin-top: 30px;
+    //   }
+    // }
+
+    // .bg2 {
+    //   top: 518px;
+    //   height: 280px;
+    //   background-size: cover;
      
+    // }
+
+    .carousel-control-prev {
+      left: 6px;
     }
 
     .mask-speaker10 {
-      margin-top: 233px;
+      margin-top: 0px;
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px;
       overflow: inherit;
@@ -92,8 +119,12 @@
     }
   }
 
+  #section8b {
+    margin-top: 525px;
+}
+
   #section9 {
-    padding-top: 15px;
+    padding-top: 50px;
     .single-ticket {
       position: relative;
       padding-bottom: 0;
@@ -126,7 +157,16 @@
     }
 
     .carousel-control-next {
-      margin-left: 140px;
+      left: auto;
+    }
+
+    .carousel-control-prev {
+      left: -130px;
+      width: 100%;
+      bottom: 0;
+      img {
+        transform: scaleX(-1);
+      }
     }
   }
 
@@ -158,6 +198,12 @@
   main {
     margin-bottom: 760px;
   }
+  #section10 {
+    // .carousel-control-next {
+    //   margin-left: 140px;
+    // }
+  }
+  
 }
 
 @media (max-width: 360px) {
@@ -181,5 +227,13 @@
         margin-top: 30px;
       }
     }
+  }
+}
+@media (max-width: 320px) {
+
+  #section10 {
+    // .carousel-control-next {
+    //   margin-left: 100px;
+    // }
   }
 }

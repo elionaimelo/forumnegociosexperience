@@ -114,9 +114,13 @@
   #section6 {
     .tab-content {
       padding-top: 40px;
-      // margin-left: 50px;
-      // margin-right: 30px;
+      margin-left: 25px;
     }
+
+    .col-lg-10 {
+      max-width: 98%;
+    }
+    
 
     .container-fluid {
       padding-left: 0;
@@ -124,6 +128,9 @@
     }
 
     .nav-tabs {
+      &::before {
+        margin-left: 340px;
+      }
       margin-left: 20px;
       .nav-item {
         .nav-link {
@@ -184,8 +191,11 @@
   // fim section7
 
   #section8 {
+    height: 310px;
+    background-size: 90% 100%;
+    
     .count-top10 {
-      margin-left: 40px;
+      // margin-left: 40px;
       margin-bottom:40px;
     }
 
@@ -202,51 +212,33 @@
     }
 
     h1 {
-      margin-left: 40px;
       line-height: 40px;
-      padding-right: 30px;
+      margin-top: 60px;
     }
 
-    #carosel1 {
+    .carousel-control-prev {
+      right: auto;
+      left: 0;
+    }
 
-      .carousel-indicators {
-        bottom: 408px;
-      }
-
-      .carosel-body {
-        margin-top: 195px;
-
-        p {
-          margin-bottom: 30px;
-        }
-
-        h1 {
-          display: table-cell;
-        }
-      }
-
-      .name {
-        left: 50%;
-        bottom: 10px;
-        margin-left: -82px;
-      }
-      .carousel-control-prev, 
-      .carousel-control-next {
-        top: 400px;
-      }
-
-      .carousel-control-prev {
-        left: 285px;
-      }
-      .carousel-control-next {
-        right: 20px;
-        img {
-          transform: scaleX(-1);
-        }
+    .carousel-control-next {
+      right: 5px;
+      img {
+        transform: scaleX(-1);
       }
     }
   }
   // fim section8
+
+  #section8b {
+    padding-top: 105px;
+    background-size: cover;
+    height: 460px;
+
+    p {
+      margin-bottom: 45px;
+    }
+  }
 
   
   #section9 {
@@ -290,20 +282,22 @@
     }
 
     .carousel-control-prev {
-      margin-left: -5px;
-      img {
-        transform: scaleX(-1);
-      }
+      justify-content: normal;
+      width: 100%;
+      margin-left: 35px;
     }
 
-    .carousel-control-next {
-      margin-left: 160px;
-    }
+    // .carousel-control-next {
+    //   margin-left: 160px;
+    // }
+    // .carousel-control-next {
+    //  right: 0px;
+    // }
 
-    .carousel-control-prev,
-    .carousel-control-next {
-      top: -90px;
-    }
+    // .carousel-control-prev,
+    // .carousel-control-next {
+    //   top: -90px;
+    // }
 
    
 
