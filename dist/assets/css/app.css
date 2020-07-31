@@ -13869,6 +13869,8 @@ readers do not read off random characters that represent icons */
           justify-content: normal;
       width: 100%;
       margin-left: 35px; }
+    #section10 #carousel2 {
+      margin-bottom: 80px; }
     #section10 p {
       font-weight: 100; }
   #section11 .btn {
