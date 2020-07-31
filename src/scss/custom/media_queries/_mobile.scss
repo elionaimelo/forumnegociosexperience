@@ -147,8 +147,12 @@
     .wrap {
       padding-top: 30px;
     }
+
+    .container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
     h2 {
-      margin-top: -25px;
       margin-bottom: 30px;
     }
 
@@ -167,6 +171,10 @@
       img {
         transform: scaleX(-1);
       }
+    }
+
+    #carousel2 {
+      margin-bottom: 50px;
     }
   }
 

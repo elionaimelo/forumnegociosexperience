@@ -13969,8 +13969,10 @@ readers do not read off random characters that represent icons */
         color: #fff; }
   #section10 .wrap {
     padding-top: 30px; }
+  #section10 .container {
+    padding-right: 0px;
+    padding-left: 0px; }
   #section10 h2 {
-    margin-top: -25px;
     margin-bottom: 30px; }
   #section10 .col-md-10 {
     max-width: 100%; }
@@ -13983,6 +13985,8 @@ readers do not read off random characters that represent icons */
     #section10 .carousel-control-prev img {
       -webkit-transform: scaleX(-1);
               transform: scaleX(-1); }
+  #section10 #carousel2 {
+    margin-bottom: 50px; }
   main {
     margin-bottom: 1086px;
     top: 460px; }
