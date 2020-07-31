@@ -13688,7 +13688,7 @@ readers do not read off random characters that represent icons */
 @media (max-width: 1440px) {
   #section3 {
     background-size: 89.3%; }
-  #section6 .col-md-10 {
+  #section6 .col-lg-10 {
     max-width: 88.7%;
     -ms-flex: auto;
         flex: auto; }
