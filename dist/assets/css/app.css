@@ -13973,7 +13973,8 @@ readers do not read off random characters that represent icons */
     padding-right: 0px;
     padding-left: 0px; }
   #section10 h2 {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding-right: 15px; }
   #section10 .col-md-10 {
     max-width: 100%; }
   #section10 .carousel-control-next {
