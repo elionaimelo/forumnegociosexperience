@@ -15,8 +15,8 @@ const gulp = require("gulp"),
 
 const folder = {
   src: "src/", // aquivos fontes
-  dist: "dist/", // arquivos finais
-  dist_assets: "dist/assets/", //demais arquivos
+  dist: "../forum/", // arquivos finais
+  dist_assets: "../forum/assets/", //demais arquivos
 };
 
 
