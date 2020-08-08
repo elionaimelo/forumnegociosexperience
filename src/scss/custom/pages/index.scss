@@ -346,7 +346,7 @@
 // fim section7
 
 #section8 {
-  height: 470px;
+  height: 445px;
   width: 100%;
   background: url(../images/bg-palestrantes.png) no-repeat top left;
   background-size: 72% 100%;
@@ -382,6 +382,16 @@
     right: -80px;
     left: auto;
     height: 0;
+  }
+
+  .name {
+    width: 170px;
+    top: 0;
+    margin-top: 296px;
+    left: 50px;
+    font-size: 40px;
+    color: $branco;
+    line-height: 50px;
   }
 }
 
