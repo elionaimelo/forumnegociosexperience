@@ -289,6 +289,15 @@
     .speaker {
       max-width: 370px;
       margin-bottom: 110px;
+
+      &:first-child {
+        margin-left: 16.66667%;
+      }
+
+      &:nth-child(3n) {
+        margin-left: 16.66667%;
+      }
+
       figure {
         border-radius: 10px;
         display: table;
@@ -321,6 +330,11 @@
     .speaker {
       max-width: 370px;
       margin-bottom: 85px;
+
+      // &:nth-child(2) {
+      //   margin-left: 16.66667%;
+      // }
+
       figure {
         border-radius: 10px;
         display: table;
