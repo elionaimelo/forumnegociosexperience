@@ -127,7 +127,7 @@ $("#carousel10").carousel({
   interval: 100000000000000
 });
 
-
+$(".wpcf7-form").removeAttr("novalidate");
 
 var prev = document.getElementById("bt-prev");
 var next = document.getElementById("bt-next");
