@@ -82,6 +82,12 @@
       overflow: inherit;
     }
 
+    .name {
+      left: 50%;
+      margin-left: -75px;
+      margin-top: 255px;
+    }
+
 
     #carosel1 {
 
@@ -239,6 +245,11 @@
       .count-top10 {
         margin-top: 30px;
       }
+    }
+
+    
+    .name {
+      margin-top: 205px;
     }
   }
 }
