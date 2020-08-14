@@ -300,8 +300,13 @@
 
       figure {
         border-radius: 10px;
+        width: 100%;
         display: table;
         overflow: hidden;
+
+        img {
+          width: 100%;
+        }
       }
       p {
         max-width: 83%;
@@ -328,7 +333,7 @@
   .others-speakers {
     margin-top: 110px;
     .speaker {
-      max-width: 370px;
+      max-width: 270px;
       margin-bottom: 85px;
 
       // &:nth-child(2) {

@@ -129,6 +129,14 @@ $("#carousel10").carousel({
 
 $(".wpcf7-form").removeAttr("novalidate");
 
+$(document).on('click', 'nav a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});
+
 var prev = document.getElementById("bt-prev");
 var next = document.getElementById("bt-next");
 

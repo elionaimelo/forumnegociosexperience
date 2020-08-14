@@ -98,9 +98,10 @@
 
 
 .btn-vaga {
+  background: $gradiente;
   color: white;
   border-radius: 8px;
-  box-shadow: 0px 10px 50px rgba(115, 0, 199, 0.25);
+  box-shadow: 0px 12px 70px rgba(115, 0, 199,0.7);
   transition: all 0.2s ease-in-out;
   width: inherit;
   border: 2px solid #320553;
